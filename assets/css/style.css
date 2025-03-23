@@ -6385,14 +6385,6 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
     margin-bottom: 20px;
 }
 
-.style-one.service-area .flip-box-thumb {
-    margin-top: 26px;
-}
-
-.style-one.service-area .flip-box-content h4 {
-    color: #fff;
-}
-
 .style-one.service-area .flip-box-content p {
     color: #BCBCBC;
 }
@@ -7369,14 +7361,6 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
     width: auto;
     height: auto;
     margin-bottom: 20px;
-}
-
-.style-one.service-area .flip-box-thumb {
-    margin-top: 26px;
-}
-
-.style-one.service-area .flip-box-content h4 {
-    color: #fff;
 }
 
 .style-one.service-area .flip-box-content p {
@@ -8359,14 +8343,6 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
     width: auto;
     height: auto;
     margin-bottom: 20px;
-}
-
-.style-one.service-area .flip-box-thumb {
-    margin-top: 26px;
-}
-
-.style-one.service-area .flip-box-content h4 {
-    color: #fff;
 }
 
 .style-one.service-area .flip-box-content p {
@@ -9633,10 +9609,6 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
 
 .style-one.service-area .flip-box-thumb {
     margin-top: 26px;
-}
-
-.style-one.service-area .flip-box-content h4 {
-    color: #fff;
 }
 
 .style-one.service-area .flip-box-content p {
@@ -13577,10 +13549,6 @@ button.icons {
     width: 100%;
 }
 
-.inner-style .job-apply-button {
-    text-align: right;
-}
-
 .inner-style .job-apply-button a {
     display: inline-block;
     border: 2px solid #2222;
@@ -15397,7 +15365,6 @@ span.flaticon-multiply i {
     width: 75px;
     line-height: 75px;
     text-align: center;
-    border-radius: 50%;
     background: rgba(255,255,255,0.1);
     position: relative;
     z-index: 1;

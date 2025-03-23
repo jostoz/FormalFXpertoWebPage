@@ -37,6 +37,9 @@
 	<link rel="stylesheet" href="assets/css/coustom-animation.css" type="text/css" media="all">
 	<!-- modernizr js -->
 	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.6.10/i18next.min.js"></script>
+	<script src="assets/js/translations.js"></script>
+	<script src="assets/js/language-switcher.js"></script>
 </head>
 
 <body>
@@ -63,32 +66,32 @@
 			<div class="col-lg-9">
 				<div class="header-menu">
 					<ul>
-						<li><a href="index.html">Inicio</a></li>
-						<li class="menu-item-has-children"><a href="#">Nosotros<i class="fas fa-chevron-down"></i></a>
+						<li><a href="index.html" data-i18n="nav.home"></a></li>
+						<li class="menu-item-has-children"><a href="#" data-i18n="nav.about"></a>
                            <ul class="sub-menu">
-                           	   <li><a href="about-1.html">Sobre FXperto</a></li>
-                           	   <li><a href="mission.html">Misión y Visión</a></li>
-                               <li><a href="team.html">Nuestro Equipo</a></li>
+                           	   <li><a href="about-1.html" data-i18n="nav.aboutFxperto"></a></li>
+                           	   <li><a href="mission.html" data-i18n="nav.mission"></a></li>
+                               <li><a href="team.html" data-i18n="nav.team"></a></li>
                            </ul>
 						</li>
-						<li class="menu-item-has-children"><a href="#">Servicios<i class="fas fa-chevron-down"></i></a>
+						<li class="menu-item-has-children"><a href="#" data-i18n="nav.services"></a>
                            <ul class="sub-menu">
-                           	   <li><a href="service.html">Nuestras Soluciones</a></li>
-                           	   <li><a href="pricing.html">Planes</a></li>
-                               <li><a href="service-details.html">Servicios Enterprise</a></li>
+                           	   <li><a href="service.html" data-i18n="nav.solutions"></a></li>
+                           	   <li><a href="pricing.html" data-i18n="nav.plans"></a></li>
+                               <li><a href="service-details.html" data-i18n="nav.enterprise"></a></li>
                            </ul>
 						</li>
-						<li class="menu-item-has-children"><a href="#">Recursos<i class="fas fa-chevron-down"></i></a>
+						<li class="menu-item-has-children"><a href="#" data-i18n="nav.resources"></a>
                            <ul class="sub-menu">
-                           	   <li><a href="blog-grid.html">Blog</a></li>
-                           	   <li><a href="faqs.html">FAQs</a></li>
-                           	   <li><a href="project.html">Casos de Éxito</a></li>
+                           	   <li><a href="blog-grid.html" data-i18n="nav.blog"></a></li>
+                           	   <li><a href="faqs.html" data-i18n="nav.faqs"></a></li>
+                           	   <li><a href="project.html" data-i18n="nav.successCases"></a></li>
                            </ul>
 						</li>
-						<li><a href="contact.html">Contacto</a></li>
+						<li><a href="contact.html" data-i18n="nav.contact"></a></li>
 					</ul>
 					<div class="header-button">
-						<a href="contact.html">Prueba Gratuita</a>
+						<a href="contact.html" data-i18n="nav.freeTrial"></a>
 					</div>
 				</div>
 			</div>
@@ -195,8 +198,8 @@
 		<div class="row">
 			<div class="col-lg-12 text-center">
 				<div class="section-title center inner-style">
-        			<h4>Nuestro Equipo</h4>
-        			<h1>Expertos en Gestión de Riesgo Cambiario</h1>
+        			<h4 data-i18n="team.title"></h4>
+        			<h1 data-i18n="team.subtitle"></h1>
             	</div>
 			</div>
 		</div>
@@ -303,10 +306,10 @@
 		<div class="row align-items-center">
 			<div class="col-lg-6">
 				<div class="call-action-content">
-					<h4>¿Listo para comenzar?</h4>
-					<h1>Agenda una Demo</h1>
-					<h1>Personalizada</h1>
-					<p>Nuestro equipo te mostrará cómo podemos ayudarte a optimizar tu gestión de riesgo cambiario.</p>
+					<h4 data-i18n="cta.ready"></h4>
+					<h1 data-i18n="cta.schedule"></h1>
+					<h1 data-i18n="cta.personalized"></h1>
+					<p data-i18n="cta.description"></p>
 				</div>
 			</div>
 			<div class="col-lg-6">
@@ -332,7 +335,7 @@
 					<a href="index.html"><img src="assets/images/logo-2.png" alt="FXperto Logo"></a>
 				</div>
 				<div class="footer-widget-desc">
-					<p>FXperto es tu socio estratégico en la gestión de riesgo cambiario. Combinamos tecnología de vanguardia con experiencia financiera para proteger y optimizar tus operaciones en divisas.</p>
+					<p data-i18n="footer.description"></p>
 				</div>
 				<div class="footer-social">
 					<ul>
