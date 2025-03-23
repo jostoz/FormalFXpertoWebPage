@@ -1075,16 +1075,17 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: #f8f9fa;
+    background: #0077b5;  // LinkedIn brand color
     border-radius: 50%;
-    color: #0B2239;
+    color: #ffffff;  // White color for better contrast
     transition: all 0.4s ease;
 }
 
 .style-one .team-social-icon ul li a:hover {
-    background: #0c5adb;
+    background: #005885;  // Darker shade for hover
     color: #fff;
     transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 119, 181, 0.3);  // Adding subtle shadow
 }
 
 .style-one .team-description {
@@ -2077,16 +2078,17 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: #f8f9fa;
+    background: #0077b5;  // LinkedIn brand color
     border-radius: 50%;
-    color: #0B2239;
+    color: #ffffff;  // White color for better contrast
     transition: all 0.4s ease;
 }
 
 .style-one .team-social-icon ul li a:hover {
-    background: #0c5adb;
+    background: #005885;  // Darker shade for hover
     color: #fff;
     transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 119, 181, 0.3);  // Adding subtle shadow
 }
 
 .style-one .team-description {
@@ -3079,16 +3081,17 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: #f8f9fa;
+    background: #0077b5;  // LinkedIn brand color
     border-radius: 50%;
-    color: #0B2239;
+    color: #ffffff;  // White color for better contrast
     transition: all 0.4s ease;
 }
 
 .style-one .team-social-icon ul li a:hover {
-    background: #0c5adb;
+    background: #005885;  // Darker shade for hover
     color: #fff;
     transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 119, 181, 0.3);  // Adding subtle shadow
 }
 
 .style-one .team-description {
@@ -4081,16 +4084,17 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: #f8f9fa;
+    background: #0077b5;  // LinkedIn brand color
     border-radius: 50%;
-    color: #0B2239;
+    color: #ffffff;  // White color for better contrast
     transition: all 0.4s ease;
 }
 
 .style-one .team-social-icon ul li a:hover {
-    background: #0c5adb;
+    background: #005885;  // Darker shade for hover
     color: #fff;
     transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 119, 181, 0.3);  // Adding subtle shadow
 }
 
 .style-one .team-description {
@@ -4854,16 +4858,17 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: #f8f9fa;
+    background: #0077b5;  // LinkedIn brand color
     border-radius: 50%;
-    color: #0B2239;
+    color: #ffffff;  // White color for better contrast
     transition: all 0.4s ease;
 }
 
 .style-one .team-social-icon ul li a:hover {
-    background: #0c5adb;
+    background: #005885;  // Darker shade for hover
     color: #fff;
     transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 119, 181, 0.3);  // Adding subtle shadow
 }
 
 .style-one .single-team-box:hover {
@@ -5842,16 +5847,17 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: #f8f9fa;
+    background: #0077b5;  // LinkedIn brand color
     border-radius: 50%;
-    color: #0B2239;
+    color: #ffffff;  // White color for better contrast
     transition: all 0.4s ease;
 }
 
 .style-one .team-social-icon ul li a:hover {
-    background: #0c5adb;
+    background: #005885;  // Darker shade for hover
     color: #fff;
     transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 119, 181, 0.3);  // Adding subtle shadow
 }
 
 .style-one .single-team-box:hover {
@@ -5930,215 +5936,6 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
 .style-one .team-menu ul li .sub-menu li a:hover{
     color: #fff !important;
 }
-
-.style-one .team-menu ul li .sub-menu li a:before{
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 0;
-    left: 0;
-    bottom: 0;
-    background:#0c5adb;
-    z-index: -1;
-    transition: 0.5s;
-}
-
-.style-one .team-menu ul li .sub-menu li a:hover:before{
-    height:100%;
-    top: 0;
-}
-
-
-.sticky {
-    left: 0;
-    margin: auto;
-    position: fixed !important;
-    top: 0;
-    width: 100%;
-    -webkit-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
-    background: #041424 !important;
-    transition: 0.5s;
-    z-index: 999 !important;
-    -webkit-animation: 300ms running fadeInDown;
-    animation: 500ms running fadeInUp;
-    animation-name: slideInDown;
-}
-
-/*---=====================================================
-   <!--Toptech Hero Area Css Style One-->
-=========================================================---*/
-.style-one.hero-area {
-    background: url(../images/home-1/hero-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 945px;
-}
-
-.style-one .hero-content h4 {
-    font-size: 25px;
-    font-weight: 600;
-    color: #fff;
-    text-transform: uppercase;
-    margin: 0 0 21px;
-}
-
-.style-one .hero-content h1 {
-    font-size: 74px;
-    color: #fff;
-    font-weight: 700;
-    line-height: 66px;
-    text-transform: uppercase;
-}
-
-.style-one .hero-content p {
-    width: 48%;
-    color: #fff;
-    font-size: 17px;
-    line-height: 25px;
-    margin: 26px 0 0;
-}
-
-.style-one.hero-button{
-    margin-top: 49px;
-}
-
-.style-one .hero-button.style-one a {
-    display: inline-block;
-    background: #0c5adb;
-    border: 1px solid #0c5adb;
-    color: #fff;
-    padding: 13px 45px;
-    font-weight: 500;
-    font-size: 17px;
-    margin-right: 14px;
-    transition: 0.5s;
-}
-
-.style-one .hero-button.style-one a:hover{
-  background: transparent;
-  border: 1px solid #ffffff6e;
-}
-
-.style-one a.button-two {
-    background: transparent !important;
-    border: 1px solid #ffffff6e !important;
-    padding: 12px 45px !important;
-    transition: 0.5s;
-}
-
-.style-one a.button-two:hover{
-  background:#0c5adb !important;
-  color:#fff;
- border: 1px solid #0c5adb !important;
-}
-
-
-/*---=====================================================
-   <!--Toptech Feature Area Css Style One-->
-=========================================================---*/
-.style-one.feature-area {
-    padding: 0px 0 137px;
-}
-
-.style-one.feature-area .row.margin-top {
-    margin-top: -91px;
-}
-
-.style-one .flip-box {
-    background-color: transparent;
-    width: 300px;
-    height: 185px;
-    perspective: 1000px;
-}
-
-.style-one .flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 174%;
-    text-align: left;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-.style-one .flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
-
-.style-one .flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.style-one .flip-box-front {
-    padding: 36px 25px 0;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 0 3px rgba(0,0,0,0.20);
-}
-
-.style-one .flip-box-content h4 {
-    font-size: 23px;
-    font-weight: 700;
-    margin: 26px 0 8px;
-}
-
-.style-one .flip-box-content p {
-    margin: 0 0 28px;
-}
-
-.style-one .flip-box-button a {
-    display: inline-block;
-    font-size: 17px;
-    font-weight: 600;
-    font-family: 'Rajdhani';
-    text-transform: uppercase;
-    color: #000;
-}
-
-.style-one .flip-box-button i {
-    display: inline-block;
-    font-size: 16px;
-    position: relative;
-    color: #000;
-    padding-left: 6px;
-    font-weight: 600;
-}
-
-.style-one .flip-box-back {
-    background-color:#0C5ADB;
-    transform: rotateY(180deg);
-    padding: 34px 24px 0;
-    border-radius: 5px;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-}
-
-.flip-box .flip-box-back::before {
-    position: absolute;
-    content: "";
-    top: -112px;
-    right: -112px;
-    background: #fff;
-    width: 224px;
-    height: 224px;
-    border-radius: 50%;
-    transition: 0.4s;
-    opacity: 0.1;
-    z-index: -1;
-}
-
-.style-one .flip-box-back .flip-box-button a,
-.style-one .flip-box-back .flip-box-button i,
-.style-one .flip-box-back .flip-box-content p,
-.style-one .flip-box-back .flip-box-content h4{
-    color:#fff !important;
-} 
 
 .style-one .team-menu ul li .sub-menu li a:before{
     position: absolute;
@@ -7036,16 +6833,17 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: #f8f9fa;
+    background: #0077b5;  // LinkedIn brand color
     border-radius: 50%;
-    color: #0B2239;
+    color: #ffffff;  // White color for better contrast
     transition: all 0.4s ease;
 }
 
 .style-one .team-social-icon ul li a:hover {
-    background: #0c5adb;
+    background: #005885;  // Darker shade for hover
     color: #fff;
     transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 119, 181, 0.3);  // Adding subtle shadow
 }
 
 .style-one .single-team-box:hover {
@@ -8025,16 +7823,17 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: #f8f9fa;
+    background: #0077b5;  // LinkedIn brand color
     border-radius: 50%;
-    color: #0B2239;
+    color: #ffffff;  // White color for better contrast
     transition: all 0.4s ease;
 }
 
 .style-one .team-social-icon ul li a:hover {
-    background: #0c5adb;
+    background: #005885;  // Darker shade for hover
     color: #fff;
     transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 119, 181, 0.3);  // Adding subtle shadow
 }
 
 .style-one .single-team-box:hover {
@@ -9014,16 +8813,17 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: #f8f9fa;
+    background: #0077b5;  // LinkedIn brand color
     border-radius: 50%;
-    color: #0B2239;
+    color: #ffffff;  // White color for better contrast
     transition: all 0.4s ease;
 }
 
 .style-one .team-social-icon ul li a:hover {
-    background: #0c5adb;
+    background: #005885;  // Darker shade for hover
     color: #fff;
     transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 119, 181, 0.3);  // Adding subtle shadow
 }
 
 .style-one .single-team-box:hover {
@@ -10283,16 +10083,17 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: #f8f9fa;
+    background: #0077b5;  // LinkedIn brand color
     border-radius: 50%;
-    color: #0B2239;
+    color: #ffffff;  // White color for better contrast
     transition: all 0.4s ease;
 }
 
 .style-one .team-social-icon ul li a:hover {
-    background: #0c5adb;
+    background: #005885;  // Darker shade for hover
     color: #fff;
     transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 119, 181, 0.3);  // Adding subtle shadow
 }
 
 .style-one .single-team-box:hover {
@@ -12756,799 +12557,6 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
     width: 100%;
     margin-top: 19px;
 }
-/*section-title-center*/
-.inner-style.section-title.center {
-    margin-bottom: 27px;
-}
-.inner-style.section-title.center h4 {
-    font-size: 18px;
-    color: #0c5adb;
-    font-weight: 600;
-    margin: 0 0 17px;
-}
-
-.inner-style.section-title.center h1 {
-    font-size: 42px;
-    font-weight: 700;
-    line-height: 40px;
-}
-
-.inner-style.section-title.center p.section-desc {
-    margin: 0;
-    width: 100%;
-    margin-top: 19px;
-}
-
-.inner-style.toptech-button a {
-    display: inline-block;
-    background: #0c5adb;
-    border: 1px solid #0c5adb;
-    color: #fff;
-    padding: 14px 35px;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 5px;
-    margin-top: 38px;
-    position: relative;
-    transition: 0.5s;
-    z-index: 1;
-}
-
-.inner-style.toptech-button a:hover{
-    color: #0c5adb;
-}
-
-.inner-style.toptech-button a:before{
-    position: absolute;
-    content: "";
-    width:0;
-    height: 100%;
-    right: 0;
-    top: 0;
-    background: #fff;
-    z-index: -1;
-    transition: 0.5s;
-    border-radius: 5px;
-}
-
-.inner-style.toptech-button a:hover:before{
-  width: 100%;
-  left: 0;
-}
-
-.inner-style.toptech-button i {
-    display: inline-block;
-    color: #fff;
-    font-size: 24px;
-    position: relative;
-    top: 4px;
-    left: 3px;
-    transition: 0.5s;
-}
-
-.inner-style.toptech-button a:hover i{
-    color: #0c5adb;
-}
-
-
-
-/*---=====================================================
-   <!--Toptech Testimonial Area Css Inner Style One-->
-=========================================================---*/
-.inner-style-one.testimonial-area {
-    background: url(../images/about-inner/testi-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    padding: 121px 0 102px;
-}
-
-.inner-style-one .testi-desc p {
-    font-size: 20px;
-    line-height: 34px;
-    color: #041424;
-    width: 65%;
-    margin: auto;
-    margin-top: 176px;
-}
-
-.inner-style-one .testi-rating {
-    margin-top: 20px;
-}
-
-.inner-style-one .testi-rating ul li {
-    display: inline-block;
-}
-
-.inner-style-one .testi-rating ul li i {
-    color: #FF9100;
-    margin: 0 3px;
-}
-
-.inner-style-one .testi-author h4 {
-    font-size: 24px;
-    margin: 53px 0 5px;
-    font-weight: 600;
-    position: relative;
-}
-
-.inner-style-one .testi-author h4:before {
-    position: absolute;
-    content: "";
-    width: 28px;
-    height: 2px;
-    left: 0;
-    right: 0;
-    top: -25px;
-    background: #0B59D7;
-    margin: auto;
-}
-
-.testimonial-area .owl-dots {
-    position: absolute;
-    top: 36px;
-    left: 0;
-    right: 0;
-    text-align: center;
-}
-
-.inner-style-one.testimonial-area button.owl-dot {
-    background: url(../images/about-inner/testi-1.png) !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-position: center center;
-    width: 100px;
-    height: 100px;
-    margin: 0 22px;
-}
-
-.inner-style-one.testimonial-area button.owl-dot:nth-child(2){
-    background: url(../images/about-inner/testi-2.png) !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-position: center center;
-}
-
-.inner-style-one.testimonial-area button.owl-dot:nth-child(3){
-    background: url(../images/about-inner/testi-3.png) !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-position: center center;
-}
-
-.inner-style-one.testimonial-area button.owl-dot:nth-child(4){
-    background: url(../images/about-inner/testi-4.png) !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-position: center center;
-}
-
-.inner-style-one.testimonial-area button.owl-dot.active{
-    transform: scale(1.1);
-    border: 6px solid #0c5adb;
-    border-radius: 50%;
-}
-
-.inner-style-one.testimonial-area button.owl-prev {
-    display: inline-block;
-    position: absolute;
-    left: 14px;
-    top: 31%;
-}
-
-.inner-style-one.testimonial-area button.owl-prev i {
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    filter: drop-shadow(0px 10px 10px rgba(207,218,235,0.2));
-    background-color: #ffffff;
-    line-height: 60px;
-    color: #0c5adb;
-    font-size: 20px;
-    transition: 0.5s;
-}
-
-.inner-style-one.testimonial-area button.owl-next {
-    display: inline-block;
-    position: absolute;
-    right: 9px;
-    top: 31%;
-}
-
-.inner-style-one.testimonial-area button.owl-next i {
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    filter: drop-shadow(0px 10px 10px rgba(207,218,235,0.2));
-    background-color: #ffffff;
-    line-height: 60px;
-    color: #0c5adb;
-    font-size: 20px;
-    transition: 0.5s;
-}
-
-.inner-style-one.testimonial-area button.owl-next i,
-.inner-style-one.testimonial-area button.owl-prev i:hover{
-    background:#0c5adb;
-    color:#fff;
-}
-
-
-
-/*---=====================================================
-   <!--Toptech About Area Css Inner Style Two-->
-=========================================================---*/
-
-.inner-style-two.about-area {
-    background: url(../images/about-inner/about-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 125px 0 125px;
-}
-
-.inner-style-two.about-area .inner-style.section-title.left {
-    margin-bottom: 41px;
-}
-
-.inner-style-two.about-area .inner-style.section-title.left p.section-desc {
-    margin: 0;
-    width: 91%;
-    margin-top: 19px;
-}
-
-.inner-style-two .about-left {
-    position: relative;
-    left: -60px;
-}
-
-.inner-style-two .about-video-box {
-    width: 310px;
-    height: 260px;
-    border-radius: 5px;
-    background-color: #0c5adb;
-    border: 8px solid #ffffff;
-    text-align: center;
-    line-height: 238px;
-    position: absolute;
-    bottom: 30px;
-    right: 1px;
-}
-
-.inner-style-two .about-video-box i {
-    display: inline-block;
-    background: #fff;
-    width: 80px;
-    height: 80px;
-    line-height: 85px;
-    border-radius: 50%;
-    color: #0D5ADA;
-    font-size: 30px;
-}
-
-.inner-style-two .abour-right {
-    position: relative;
-    margin-bottom: 78px;
-}
-
-.inner-style-two .abour-right:before {
-    position: absolute;
-    content: "";
-    width: 91%;
-    height: 6px;
-    bottom: -45px;
-    left: 0px;
-    background: #22222247;
-}
-
-.inner-style-two .abour-right:after {
-    position: absolute;
-    content: "";
-    width: 91%;
-    height: 2px;
-    bottom: -45px;
-    left: 0px;
-    background: #0C5ADB;
-}
-
-.inner-style-two .about-single-box {
-    display: inline-block;
-    width: 48%;
-}
-
-.inner-style-two .about-icon {
-    float: left;
-    padding-right: 12px;
-}
-
-.inner-style-two .about-box-content h4 {
-    font-weight: 600;
-    margin: 0;
-    font-size: 22px;
-}
-
-.inner-style-two .about-box-content p {
-    margin: 12px 0 0;
-}
-
-
-.inner-style-two .about-single-button {
-    display: inline-block;
-    margin-right: 9px;
-}
-
-.inner-style-two .about-single-button a {
-    display: inline-block;
-    background: #0B59DB;
-    color: #fff;
-    font-size: 17px;
-    padding: 5px 33px;
-    border-radius: 30px;
-}
-
-
-
-
-
-/*---=====================================================
-   <!--Toptech Service Area Css Inner Style-->
-=========================================================---*/
-.inner-style.service-area {
-    padding: 121px 0 60px;
-    background: #F3F7FD;
-}
-
-.inner-style.service-area .section-title.center {
-    margin-bottom: 90px;
-}
-
-
-.inner-style .single-service-box {
-    background: #fff;
-    text-align: center;
-    transition: .5s;
-    padding: 0px 20px 32px;
-    filter: drop-shadow(0px 10px 50px rgba(217, 217, 217, 0.5));
-    background-color: #ffffff;
-    border-radius: 3px;
-    margin-bottom: 64px;
-}
-
-.inner-style .service-icon {
-    width: 85px;
-    height: 85px;
-    border-radius: 43px;
-    background-color: #f3f8fd;
-    border: 2px solid #ffffff;
-    line-height: 80px;
-    position: relative;
-    top: -38px;
-    margin: auto;
-}
-
-.inner-style .service-icon:before{
-    position: absolute;
-    content: "";
-    width:100%;
-    height:100%;
-    left: 0;
-    top: 0;
-    background:#0B59D9;
-    border-radius: 50%;
-    z-index: -1;
-    transition: 0.5s;
-}
-
-.inner-style .single-service-box:hover .service-icon:before{
-   top: 7px;
-}
-
-.inner-style .service-content h4 {
-    font-size: 24px;
-    font-weight: 600;
-    margin: 0 0 14px;
-}
-
-.inner-style .service-content p {
-    color: #686868;
-}
-
-.inner-style .service-content a {
-    display: inline-block;
-    background: #0C59DB;
-    color: #fff;
-    padding: 7px 36px;
-    transition: .5s;
-    border-radius: 30px;
-    margin-top: 13px;
-    border: 1px solid #0C59DB;
-}
-
-.inner-style .single-service-box:hover .service-content a{
-    background: transparent;
-    color:#0C59DB;
-}
-
-.inner-style .service-content i {
-    display: inline-block;
-    position: relative;
-    top: 2px;
-    left: 3px;
-}
-
-
-
-
-/*---=====================================================
-   <!--Toptech Pricing Area Css Inner Style-->
-=========================================================---*/
-.inner-style.pricing-area {
-    padding: 110px 0 116px;
-    background: #F3F7FD;
-    position: relative;
-}
-
-.inner-style.pricing-area .section-title.left {
-    margin-bottom: 57px;
-}
-
-.inner-style.pricing-area .section-title.left.inner-style p {
-    width: 89%;
-    margin: 14px 0 0;
-}
-
-.inner-style .single-pricing-box {
-    filter: drop-shadow(0px 10px 50px rgba(217,217,217,0.5));
-    background-color: #ffffff;
-    padding: 3px 3px 47px;
-}
-
-.inner-style .pricing-head {
-    background: url(../images/about-inner/pricing-head-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 28px 59px 14px;
-}
-
-.inner-style .pricing-head-content h1 {
-    font-size: 32px;
-    color: #041424;
-    margin: 0 0 4px;
-}
-
-.inner-style .pricing-body {
-    padding: 27px 53px  34px;
-}
-
-.inner-style .pricing-rate h1 {
-    font-size: 55px;
-    color: #041424;
-    margin: 0 0 16px;
-}
-
-.inner-style .pricing-rate del {
-    font-size: 22px;
-    font-weight: 600;
-    color: #0c5adb;
-    font-family: "Rajdhani";
-}
-
-.inner-style .pricing-list ul li {
-    line-height: 44px;
-}
-
-.inner-style .pricing-button {
-    text-align: center;
-}
-
-.inner-style .pricing-button a {
-    display: inline-block;
-    border-radius: 10px;
-    background-color: #ffffff;
-    border: 1px solid rgba(4,20,36,0.1);
-    padding: 15px 61px;
-    color: #131313;
-    transition: 0.5s;
-}
-
-.inner-style .pricing-button a:hover{
-    background: #115BD9;
-    color:#fff;
-}
-
-.inner-style .tab-button {
-    float: right;
-    margin-top: 36px;
-}
-
-.inner-style .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: var(--bs-nav-pills-link-active-color);
-    background-color: #021533;
-    border: transparent;
-}
-
-.inner-style .nav-link {
-    display: block;
-    padding: 14px 35px;
-    font-size: 16px;
-    font-weight: 400;
-    color: #fff;
-    text-decoration: none;
-    background: #0F5AD9;
-    border: 0;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-    margin-left: 10px;
-}
-
-.inner-style .pricing-textar-text {
-    margin-top: 72px;
-}
-
-.inner-style .pricing-textar-text p {
-    font-size: 17px;
-    color: #686868;
-    font-weight: 500;
-    font-family: "Rajdhani";
-    text-align: center;
-    margin: 0;
-    position: relative;
-}
-
-.inner-style .pricing-textar-text p:before {
-    position: absolute;
-    content: "";
-    top: 12px;
-    left: 0;
-    width: 390px;
-    height: 1px;
-    background-image: linear-gradient(90deg, #0b59db 0%, #f3f7fd 100%);
-}
-
-.inner-style .pricing-textar-text p:after {
-    position: absolute;
-    content: "";
-    top: 12px;
-    right: 0;
-    width: 390px;
-    height: 1px;
-    background-image: linear-gradient(90deg, #f3f7fd 0%, #0b59db 100%);
-}
-
-/*---=====================================================
-   <!--Toptech faqs Area Css Inner Style-->
-=========================================================---*/
-
-.inner-style.faqs-area {
-    padding: 124px 0 101px;
-    background: #F3F8FC;
-}
-
-.inner-style.faqs-area .section-title.left {
-    margin-bottom: 40px;
-}
-
-.inner-style.faqs-area .section-title.left p {
-    margin: 25px 78px 0 0;
-}
-
-.inner-style .faqs-thumb {
-    display: inline-block;
-    margin: 0 4px 0;
-}
-
-.inner-style .faqs-icon-box {
-    display: flex;
-    align-items: center;
-    gap: 23px;
-    margin: 33px 0 0;
-}
-
-.inner-style .faqs-icon-content p {
-    margin: 0;
-    width: 83%;
-}
-
-.inner-style .faq-singular .faq-question {
-    position: relative;
-    cursor: pointer;
-    margin: 0;
-    padding: 16px 10px 15px 23px;
-    font-weight: 700;
-    font-size: 18px;
-    border-radius: 5px;
-    z-index: 2;
-    transition: 0.5s;
-    background: #fff;
-    font-family: 'Nunito', sans-serif;
-}
-
-.inner-style .faq-singular {
-    position: relative;
-    background: #fff;
-    margin-bottom: 20px;
-}
-
-.inner-style .faq-singular.active .faq-question {
-    border-bottom: 1px solid #2222;
-    background: #0B59DB !important;
-    color: #fff;
-}
-
-.inner-style .faq-singular.active .faq-question:before {
-    content: "-";
-    font-size: 30px;
-    color: #fff;
-}
-
-.inner-style .faq-singular.active .faq-question img{
-    filter: brightness(0) invert(1);
-}
-
-
-/*---=====================================================
-   <!--Toptech Strat Project Details Area Css-->
-=========================================================---*/
-
-.project-details-area {
-    padding: 123px 0 93px;
-}
-
-.project-details-content {
-    margin-top: 35px;
-}
-
-.project-details-thumb img {
-    width: 100%;
-}
-
-.project-details-content h4 {
-    font-size: 36px;
-    margin-bottom: 17px;
-}
-
-p.project-details-desc {
-    font-size: 17px;
-    margin-bottom: 27px;
-    width: 96%;
-}
-
-.project-details-content h3 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    margin-top: 54px;
-}
-
-.project-details-item-images img {
-    width: 100%;
-}
-
-.project-details-list-item h4 {
-    font-size: 28px;
-}
-
-.project-details-list-item ul li i {
-    display: inline-block;
-    color: #0c5adb;
-    font-size: 19px;
-    margin-right: 11px;
-    position: relative;
-    top: 2px;
-}
-
-.project-details-list-item ul li {
-    font-size: 17px;
-    line-height: 39px;
-}
-
-a.project-details-text {
-    display: inline-block;
-    font-size: 28px;
-    line-height: 38px;
-    color: #0c5adb;
-    font-weight: 700;
-    margin-top: 50px;
-    margin-bottom: 19px;
-    font-family: "Rajdhani";
-}
-
-.project-details-right {
-    background: #F6F6EE;
-    padding: 29px 41px 30px;
-    border-radius: 5px;
-    margin-top: 50px;
-}
-
-.project-details-info {
-    border-bottom: 1px solid #86868152;
-    padding-bottom: 10px;
-    padding-top: 9px;
-}
-
-.project-details-info:last-child{
-    border-bottom: transparent;
-}
-
-.project-details-info p {
-    margin-bottom: 0;
-}
-
-.project-details-info h6 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-top: 6px;
-}
-
-
-
-/*---=====================================================
-   <!--Toptech Project Area Css inner style-->
-=========================================================---*/
-.inner-style.project-area {
-    background: #f3f8fc;
-    padding: 119px 0 95px;
-}
-
-.inner-style.project-area .section-title.center {
-    margin-bottom: 56px;
-}
-
-.inner-style .single-project-box {
-    margin-bottom: 28px;
-}
-
-.inner-style .project-thumb img{
-    width: 100%;
-}
-
-.inner-style .project-content {
-    background: #fff;
-    padding: 30px 34px 28px;
-    width: 88%;
-    border-left: 5px solid #0c5adb;
-    position: relative;
-    margin-top: -38px;
-    transition: 0.5s;
-    border-radius: 3px;
-    height: 117px;
-}
-
-.inner-style .single-project-box:hover .project-content {
-    background: #001819;
-    height: 159px;
-    margin-top: -83px;
-}
-
-.inner-style .project-content h4 {
-    font-size: 18px;
-    margin: 0 0 12px;
-    transition: 0.5s;
-    color: #0c5adb;
-    font-weight: 600;
-    font-family: "Rajdhani";
-}
-
-.inner-style .single-project-box:hover .project-content h4{
-    color: #0c5adb;
-}
-
-.inner-style .project-content a {
-    display: inline-block;
-    color: #001819;
-    font-size: 24px;
-    font-weight: 700;
-    transition: 0.5s;
-    font-family: "Rajdhani";
-}
-
-.inner-style .project-content a:hover{
-    color:#0c5adb !important;
-}
-
-.inner-style .single-project-box:hover .project-content a {
-    color: #fff;
-}
 
 .inner-style a.project-button {
     font-size: 17px !important;
@@ -15831,7 +14839,7 @@ span.flaticon-multiply i {
 }
 
 .service-area.style-foure .service-single-box {
-    background: #ffff;
+    background: #fff;
     padding: 39px 0 30px 0;
     border-radius: 10px;
     margin: 0 0 0 35px;
@@ -16176,6 +15184,7 @@ span.flaticon-multiply i {
 .counter-area.style-foure .service-single-box-tow:hover {
     margin-top: -10px;
 }
+
 
 
 
