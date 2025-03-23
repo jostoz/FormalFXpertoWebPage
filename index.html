@@ -35,6 +35,8 @@
 	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all">
 	<!-- Coustom Animation CSS -->
 	<link rel="stylesheet" href="assets/css/coustom-animation.css" type="text/css" media="all">
+	<!-- Custom CSS for fixes -->
+	<link rel="stylesheet" href="assets/css/custom.css" type="text/css" media="all">
 	<!-- modernizr js -->
 	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
 	<!-- Language switcher scripts -->
@@ -112,6 +114,9 @@
 								<option value="en">EN</option>
 							</select>
 						</div>
+						<div class="header-button">
+							<a href="contact.html" data-i18n="nav.contact">Contact</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -132,44 +137,50 @@
 	<div class="mobile-menu">
 		<nav class="header-menu">
 			<ul class="nav_scroll">
-				<li><a href="index.html">Home</a></li>
-				<li class="menu-item-has-children"><a href="#">About</a>
+				<li><a href="index.html" data-i18n="nav.home"></a></li>
+				<li class="menu-item-has-children"><a href="#" data-i18n="nav.about"></a>
 					<ul class="sub-menu">
-						<li><a href="about-1.html">About Us 1</a></li>
-						<li><a href="about-2.html">About Us 2</a></li>
+						<li><a href="about-1.html" data-i18n="nav.aboutFxperto"></a></li>
+						<li><a href="mission.html" data-i18n="nav.mission"></a></li>
+						<li><a href="team.html" data-i18n="nav.team"></a></li>
 					</ul>
 				</li>
-				<li class="menu-item-has-children"><a href="#">Service</a>
+				<li class="menu-item-has-children"><a href="#">Services<i class="fas fa-chevron-down"></i></a>
 					<ul class="sub-menu">
-						<li><a href="service.html">Service</a></li>
-						<li><a href="service-details.html">Service Details</a></li>
+						<li><a href="service.html">FX Solutions</a></li>
+						<li><a href="service-details.html">Risk Management</a></li>
 					</ul>
 				</li>
-				<li class="menu-item-has-children"><a href="#">Pages</a>
+				<li class="menu-item-has-children"><a href="#">Resources<i class="fas fa-chevron-down"></i></a>
 					<ul class="sub-menu">
 						<li><a href="choose-us.html">Why Choose Us</a></li>
-						<li><a href="mission.html">Mission Visson </a></li>
-						<li><a href="team.html">Our Team</a></li>
-						<li><a href="team-details.html">Team Details </a></li>
-						<li><a href="project.html">Our Project</a></li>
-						<li><a href="project-details.html">Project Details </a></li>
-						<li><a href="location.html">Our Location </a></li>
-						<li><a href="pricing.html">Our Pricing</a></li>
-						<li><a href="careers.html">Careers </a></li>
-						<li><a href="faqs.html">Faqs</a></li>
+						<li><a href="mission.html">Our Approach</a></li>
+						<li><a href="team.html">Expert Team</a></li>
+						<li><a href="project.html">Case Studies</a></li>
+						<li><a href="location.html">Global Presence</a></li>
+						<li><a href="pricing.html">Pricing</a></li>
+						<li><a href="faqs.html">FAQs</a></li>
 					</ul>
 				</li>
-				<li class="menu-item-has-children"><a href="#">Blog</a>
+				<li class="menu-item-has-children"><a href="#">Insights<i class="fas fa-chevron-down"></i></a>
 					<ul class="sub-menu">
-						<li><a href="blog-grid.html">Blog Grid</a></li>
-						<li><a href="blog-list.html">Blog List</a></li>
-						<li><a href="blog-2column.html">Blog 2column</a></li>
-						<li><a href="blog-details.html">Blog Details </a></li>
+						<li><a href="blog-grid.html">Market Analysis</a></li>
+						<li><a href="blog-list.html">FX News</a></li>
+						<li><a href="blog-2column.html">Research</a></li>
+						<li><a href="blog-details.html">Expert Views</a></li>
 					</ul>
 				</li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="contact.html" data-i18n="nav.contact"></a></li>
 			</ul>
 		</nav>
+		<div class="header-right-content">
+			<div class="language-selector">
+				<select class="lang-select" onchange="changeLanguage(this.value)">
+					<option value="es">ES</option>
+					<option value="en">EN</option>
+				</select>
+			</div>
+		</div>
 	</div>
 </div>
 <!--==================================================-->

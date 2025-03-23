@@ -5,38 +5,28 @@ document.addEventListener('DOMContentLoaded', function() {
         resources: translations,
         fallbackLng: 'es',
     }).then(function(t) {
-        // Add language selector to header
-        addLanguageSelector();
+        // Set initial value for all language selectors
+        const currentLang = localStorage.getItem('language') || 'es';
+        document.querySelectorAll('.lang-select').forEach(selector => {
+            selector.value = currentLang;
+        });
+        
         // Initial translation
         updateContent();
     });
 });
-
-// Function to add language selector
-function addLanguageSelector() {
-    const headerButton = document.querySelector('.header-button');
-    if (headerButton) {
-        const languageSelector = document.createElement('div');
-        languageSelector.className = 'language-selector';
-        languageSelector.innerHTML = `
-            <select onchange="changeLanguage(this.value)" class="lang-select">
-                <option value="es">Español</option>
-                <option value="en">English</option>
-            </select>
-        `;
-        headerButton.parentNode.insertBefore(languageSelector, headerButton);
-        
-        // Set initial value
-        const currentLang = localStorage.getItem('language') || 'es';
-        languageSelector.querySelector('select').value = currentLang;
-    }
-}
 
 // Function to change language
 function changeLanguage(lng) {
     localStorage.setItem('language', lng);
     i18next.changeLanguage(lng, (err, t) => {
         if (err) return console.log('Error changing language:', err);
+        
+        // Update all language selectors
+        document.querySelectorAll('.lang-select').forEach(selector => {
+            selector.value = lng;
+        });
+        
         updateContent();
     });
 }

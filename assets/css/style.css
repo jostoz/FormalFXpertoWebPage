@@ -127,6 +127,64 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
     color: #0c5adb;
 }
 
+.language-selector {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 15px;
+    position: relative;
+}
+
+.lang-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 20px 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.lang-select:hover {
+    border-color: #0c5adb;
+    box-shadow: 0 0 10px rgba(12, 90, 219, 0.2);
+}
+
+.lang-select option {
+    background-color: #0B2239;
+    color: #fff;
+}
+
+.language-selector::after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #fff;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.header-area .language-selector .lang-select {
+    color: #fff;
+}
+
+.sticky .language-selector .lang-select {
+    color: #0B2239;
+    border-color: rgba(11, 34, 57, 0.2);
+}
+
+.sticky .language-selector::after {
+    color: #0B2239;
+}
+
 /*sub-menu*/
 .header-menu ul li.menu-item-has-children {
     position: relative;
@@ -7126,7 +7184,7 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
 .style-one .flip-box-back .flip-box-content p,
 .style-one .flip-box-back .flip-box-content h4{
     color:#fff !important;
-} 
+}
 
 
 /*---=====================================================
@@ -8104,7 +8162,7 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
 .style-one .flip-box-back .flip-box-content p,
 .style-one .flip-box-back .flip-box-content h4{
     color:#fff !important;
-} 
+}
 
 
 /*---=====================================================
@@ -9362,7 +9420,7 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
 .style-one .flip-box-back .flip-box-content p,
 .style-one .flip-box-back .flip-box-content h4{
     color:#fff !important;
-} 
+}
 
 
 /*---=====================================================
@@ -11917,11 +11975,11 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
     padding: 117px 0 105px;
 }
 
-.style-one.home-two .blog-content {
+.style-one.blog-area.home-two .blog-content {
     padding: 28px 2px 30px;
 }
 
-.style-one.home-two .blog-content a {
+.style-one.blog-area.home-two .blog-content a {
     font-size: 23px;
     font-weight: 600;
     line-height: 30px;
