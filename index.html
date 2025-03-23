@@ -37,6 +37,10 @@
 	<link rel="stylesheet" href="assets/css/coustom-animation.css" type="text/css" media="all">
 	<!-- modernizr js -->
 	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+	<!-- Language switcher scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.6.10/i18next.min.js"></script>
+	<script src="assets/js/translations.js"></script>
+	<script src="assets/js/language-switcher.js"></script>
 </head>
 
 <body>
@@ -62,45 +66,52 @@
 			<div class="col-lg-9">
 				<div class="header-menu">
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li class="menu-item-has-children"><a href="#">About<i class="fas fa-chevron-down"></i></a>
-                           <ul class="sub-menu">
-                           	   <li><a href="about-1.html">About Us</a></li>
-                           	   <li><a href="about-2.html">Our Mission</a></li>
-                           </ul>
+						<li><a href="index.html" data-i18n="nav.home"></a></li>
+						<li class="menu-item-has-children">
+							<a href="#" data-i18n="nav.about"></a>
+							<ul class="sub-menu">
+								<li><a href="about-1.html" data-i18n="nav.aboutFxperto"></a></li>
+								<li><a href="about-2.html">Our Mission</a></li>
+							</ul>
 						</li>
 						<li class="menu-item-has-children"><a href="#">Services<i class="fas fa-chevron-down"></i></a>
-                           <ul class="sub-menu">
-                           	   <li><a href="service.html">FX Solutions</a></li>
-                           	   <li><a href="service-details.html">Risk Management</a></li>
-                           </ul>
+							<ul class="sub-menu">
+								<li><a href="service.html">FX Solutions</a></li>
+								<li><a href="service-details.html">Risk Management</a></li>
+							</ul>
 						</li>
 						<li class="menu-item-has-children"><a href="#">Resources<i class="fas fa-chevron-down"></i></a>
-                           <ul class="sub-menu">
-                           	   <li><a href="choose-us.html">Why Choose Us</a></li>
-                           	   <li><a href="mission.html">Our Approach</a></li>
-                           	   <li><a href="team.html">Expert Team</a></li>
-                           	   <li><a href="project.html">Case Studies</a></li>
-                           	   <li><a href="location.html">Global Presence</a></li>
-                           	   <li><a href="pricing.html">Pricing</a></li>
-                           	   <li><a href="faqs.html">FAQs</a></li>
-                           </ul>
+							<ul class="sub-menu">
+								<li><a href="choose-us.html">Why Choose Us</a></li>
+								<li><a href="mission.html">Our Approach</a></li>
+								<li><a href="team.html">Expert Team</a></li>
+								<li><a href="project.html">Case Studies</a></li>
+								<li><a href="location.html">Global Presence</a></li>
+								<li><a href="pricing.html">Pricing</a></li>
+								<li><a href="faqs.html">FAQs</a></li>
+							</ul>
 						</li>
-					    <li class="menu-item-has-children"><a href="#">Insights<i class="fas fa-chevron-down"></i></a>
-                           <ul class="sub-menu">
-                           	   <li><a href="blog-grid.html">Market Analysis</a></li>
-                           	   <li><a href="blog-list.html">FX News</a></li>
-                           	   <li><a href="blog-2column.html">Research</a></li>
-                           	   <li><a href="blog-details.html">Expert Views</a></li>
-                           </ul>
+						<li class="menu-item-has-children"><a href="#">Insights<i class="fas fa-chevron-down"></i></a>
+							<ul class="sub-menu">
+								<li><a href="blog-grid.html">Market Analysis</a></li>
+								<li><a href="blog-list.html">FX News</a></li>
+								<li><a href="blog-2column.html">Research</a></li>
+								<li><a href="blog-details.html">Expert Views</a></li>
+							</ul>
 						</li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 					<div class="header-search-icon search-box-outer">
 						<a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
 					</div>
+					<div class="language-selector">
+						<select class="lang-select" onchange="changeLanguage(this.value)">
+							<option value="es">Español</option>
+							<option value="en">English</option>
+						</select>
+					</div>
 					<div class="header-button">
-						<a href="contact.html">Get Started</a>
+						<a href="contact.html" data-i18n="nav.freeTrial"></a>
 					</div>
 				</div>
 			</div>
@@ -123,38 +134,38 @@
 			<ul class="nav_scroll">
 				<li><a href="index.html">Home</a></li>
 				<li class="menu-item-has-children"><a href="#">About</a>
-                   <ul class="sub-menu">
-                   	   <li><a href="about-1.html">About Us 1</a></li>
-                   	   <li><a href="about-2.html">About Us 2</a></li>
-                   </ul>
+					<ul class="sub-menu">
+						<li><a href="about-1.html">About Us 1</a></li>
+						<li><a href="about-2.html">About Us 2</a></li>
+					</ul>
 				</li>
 				<li class="menu-item-has-children"><a href="#">Service</a>
-                   <ul class="sub-menu">
-                   	   <li><a href="service.html">Service</a></li>
-                   	   <li><a href="service-details.html">Service Details</a></li>
-                   </ul>
+					<ul class="sub-menu">
+						<li><a href="service.html">Service</a></li>
+						<li><a href="service-details.html">Service Details</a></li>
+					</ul>
 				</li>
 				<li class="menu-item-has-children"><a href="#">Pages</a>
-                   <ul class="sub-menu">
-                   	   <li><a href="choose-us.html">Why Choose Us</a></li>
-                   	   <li><a href="mission.html">Mission Visson </a></li>
-                   	   <li><a href="team.html">Our Team</a></li>
-                   	   <li><a href="team-details.html">Team Details </a></li>
-                   	   <li><a href="project.html">Our Project</a></li>
-                   	   <li><a href="project-details.html">Project Details </a></li>
-                   	   <li><a href="location.html">Our Location </a></li>
-                   	   <li><a href="pricing.html">Our Pricing</a></li>
-                   	   <li><a href="careers.html">Careers </a></li>
-                   	   <li><a href="faqs.html">Faqs</a></li>
-                   </ul>
+					<ul class="sub-menu">
+						<li><a href="choose-us.html">Why Choose Us</a></li>
+						<li><a href="mission.html">Mission Visson </a></li>
+						<li><a href="team.html">Our Team</a></li>
+						<li><a href="team-details.html">Team Details </a></li>
+						<li><a href="project.html">Our Project</a></li>
+						<li><a href="project-details.html">Project Details </a></li>
+						<li><a href="location.html">Our Location </a></li>
+						<li><a href="pricing.html">Our Pricing</a></li>
+						<li><a href="careers.html">Careers </a></li>
+						<li><a href="faqs.html">Faqs</a></li>
+					</ul>
 				</li>
-			    <li class="menu-item-has-children"><a href="#">Blog</a>
-                   <ul class="sub-menu">
-                   	   <li><a href="blog-grid.html">Blog Grid</a></li>
-                   	   <li><a href="blog-list.html">Blog List</a></li>
-                   	   <li><a href="blog-2column.html">Blog 2column</a></li>
-                   	   <li><a href="blog-details.html">Blog Details </a></li>
-                   </ul>
+				<li class="menu-item-has-children"><a href="#">Blog</a>
+					<ul class="sub-menu">
+						<li><a href="blog-grid.html">Blog Grid</a></li>
+						<li><a href="blog-list.html">Blog List</a></li>
+						<li><a href="blog-2column.html">Blog 2column</a></li>
+						<li><a href="blog-details.html">Blog Details </a></li>
+					</ul>
 				</li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
@@ -204,122 +215,122 @@
 		<div class="row margin-top">
 			<div class="col-lg-4 col-md-6 col-xl-3">
 				<div class="flip-box">
-				    <div class="flip-box-inner">
-					    <div class="flip-box-front">
-						    <div class="flip-box-thumb">
-						      	<img src="assets/images/home-1/feature-icon.png" alt="">
-						    </div>
-						    <div class="flip-box-content">
-						    	<h4>Real-Time Intelligence</h4>
-						    	<p>Access critical market data and strategic insights before the market moves. Make informed decisions with confidence.</p>
-						    </div>
-						   <div class="flip-box-button">
-		                    	<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
-		                    </div>
-					    </div>
-					    <div class="flip-box-back">
-					        <div class="flip-box-thumb">
-						      	<img src="assets/images/home-1/feature-icon.png" alt="">
-						    </div>
-						    <div class="flip-box-content">
-						    	<h4>Real-Time Intelligence</h4>
-						    	<p>Access critical market data and strategic insights before the market moves. Make informed decisions with confidence.</p>
-						    </div>
-						   <div class="flip-box-button">
-		                    	<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
-		                    </div>
-					    </div>
-				    </div>
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<div class="flip-box-thumb">
+								<img src="assets/images/home-1/feature-icon.png" alt="">
+							</div>
+							<div class="flip-box-content">
+								<h4>Real-Time Intelligence</h4>
+								<p>Access critical market data and strategic insights before the market moves. Make informed decisions with confidence.</p>
+							</div>
+							<div class="flip-box-button">
+								<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
+							</div>
+						</div>
+						<div class="flip-box-back">
+							<div class="flip-box-thumb">
+								<img src="assets/images/home-1/feature-icon.png" alt="">
+							</div>
+							<div class="flip-box-content">
+								<h4>Real-Time Intelligence</h4>
+								<p>Access critical market data and strategic insights before the market moves. Make informed decisions with confidence.</p>
+							</div>
+							<div class="flip-box-button">
+								<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>				
 			<div class="col-lg-4 col-md-6 col-xl-3">
 				<div class="flip-box">
-				    <div class="flip-box-inner">
-					    <div class="flip-box-front">
-						    <div class="flip-box-thumb">
-						      	<img src="assets/images/home-1/feature-icon-2.png" alt="">
-						    </div>
-						    <div class="flip-box-content">
-						    	<h4>Data-Driven Strategies</h4>
-						    	<p>Leverage proven strategies based on real-time analysis, not speculation. Optimize your currency management approach.</p>
-						    </div>
-						   <div class="flip-box-button">
-		                    	<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
-		                    </div>
-					    </div>
-					    <div class="flip-box-back">
-					        <div class="flip-box-thumb">
-						      	<img src="assets/images/home-1/feature-icon-2.png" alt="">
-						    </div>
-						    <div class="flip-box-content">
-						    	<h4>Data-Driven Strategies</h4>
-						    	<p>Leverage proven strategies based on real-time analysis, not speculation. Optimize your currency management approach.</p>
-						    </div>
-						   <div class="flip-box-button">
-		                    	<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
-		                    </div>
-					    </div>
-				    </div>
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<div class="flip-box-thumb">
+								<img src="assets/images/home-1/feature-icon-2.png" alt="">
+							</div>
+							<div class="flip-box-content">
+								<h4>Data-Driven Strategies</h4>
+								<p>Leverage proven strategies based on real-time analysis, not speculation. Optimize your currency management approach.</p>
+							</div>
+							<div class="flip-box-button">
+								<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
+							</div>
+						</div>
+						<div class="flip-box-back">
+							<div class="flip-box-thumb">
+								<img src="assets/images/home-1/feature-icon-2.png" alt="">
+							</div>
+							<div class="flip-box-content">
+								<h4>Data-Driven Strategies</h4>
+								<p>Leverage proven strategies based on real-time analysis, not speculation. Optimize your currency management approach.</p>
+							</div>
+							<div class="flip-box-button">
+								<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>				
 			<div class="col-lg-4 col-md-6 col-xl-3">
 				<div class="flip-box">
-				    <div class="flip-box-inner">
-					    <div class="flip-box-front">
-						    <div class="flip-box-thumb">
-						      	<img src="assets/images/home-1/feature-icon-3.png" alt="">
-						    </div>
-						    <div class="flip-box-content">
-						    	<h4>Proactive Alerts</h4>
-						    	<p>Stay ahead of market movements with immediate notifications on key market-moving news and opportunities.</p>
-						    </div>
-						   <div class="flip-box-button">
-		                    	<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
-		                    </div>
-					    </div>
-					    <div class="flip-box-back">
-					        <div class="flip-box-thumb">
-						      	<img src="assets/images/home-1/feature-icon-3.png" alt="">
-						    </div>
-						    <div class="flip-box-content">
-						    	<h4>Proactive Alerts</h4>
-						    	<p>Stay ahead of market movements with immediate notifications on key market-moving news and opportunities.</p>
-						    </div>
-						   <div class="flip-box-button">
-		                    	<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
-		                    </div>
-					    </div>
-				    </div>
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<div class="flip-box-thumb">
+								<img src="assets/images/home-1/feature-icon-3.png" alt="">
+							</div>
+							<div class="flip-box-content">
+								<h4>Proactive Alerts</h4>
+								<p>Stay ahead of market movements with immediate notifications on key market-moving news and opportunities.</p>
+							</div>
+							<div class="flip-box-button">
+								<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
+							</div>
+						</div>
+						<div class="flip-box-back">
+							<div class="flip-box-thumb">
+								<img src="assets/images/home-1/feature-icon-3.png" alt="">
+							</div>
+							<div class="flip-box-content">
+								<h4>Proactive Alerts</h4>
+								<p>Stay ahead of market movements with immediate notifications on key market-moving news and opportunities.</p>
+							</div>
+							<div class="flip-box-button">
+								<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>			
 			<div class="col-lg-4 col-md-6 col-xl-3">
 				<div class="flip-box">
-				    <div class="flip-box-inner">
-					    <div class="flip-box-front">
-						    <div class="flip-box-thumb">
-						      	<img src="assets/images/home-1/feature-icon-4.png" alt="">
-						    </div>
-						    <div class="flip-box-content">
-						    	<h4>Expert Support</h4>
-						    	<p>Benefit from personalized consulting to design effective currency hedging strategies for your business.</p>
-						    </div>
-						   <div class="flip-box-button">
-		                    	<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
-		                    </div>
-					    </div>
-					    <div class="flip-box-back">
-					        <div class="flip-box-thumb">
-						      	<img src="assets/images/home-1/feature-icon-4.png" alt="">
-						    </div>
-						    <div class="flip-box-content">
-						    	<h4>Expert Support</h4>
-						    	<p>Benefit from personalized consulting to design effective currency hedging strategies for your business.</p>
-						    </div>
-						   <div class="flip-box-button">
-		                    	<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
-		                    </div>
-					    </div>
-				    </div>
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<div class="flip-box-thumb">
+								<img src="assets/images/home-1/feature-icon-4.png" alt="">
+							</div>
+							<div class="flip-box-content">
+								<h4>Expert Support</h4>
+								<p>Benefit from personalized consulting to design effective currency hedging strategies for your business.</p>
+							</div>
+							<div class="flip-box-button">
+								<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
+							</div>
+						</div>
+						<div class="flip-box-back">
+							<div class="flip-box-thumb">
+								<img src="assets/images/home-1/feature-icon-4.png" alt="">
+							</div>
+							<div class="flip-box-content">
+								<h4>Expert Support</h4>
+								<p>Benefit from personalized consulting to design effective currency hedging strategies for your business.</p>
+							</div>
+							<div class="flip-box-button">
+								<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>			
 		</div>
@@ -406,188 +417,188 @@
 					<h4>Our Solutions</h4>
 					<h1>Comprehensive FX &amp;</h1>
 					<h1>Risk Management <span>Solutions</span></h1>
-			    </div>
+				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-6 col-md-6 col-xl-4">
 				<div class="flip-box">
-				    <div class="flip-box-inner">
-					    <div class="flip-box-front">
-						    <div class="flip-box-thumb">
-						      	<img src="assets/images/home-1/service-icon1.png" alt="">
-						    </div>
-						    <div class="flip-box-content">
-						    	<h4>Currency Hedging</h4>
-						    	<p>Protect your business from currency fluctuations with sophisticated hedging strategies tailored to your needs.</p>
-							    <div class="flip-box-button">
-			                    	<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
-			                    </div>
-						    </div>
-					    </div>
-					    <div class="flip-box-back">
-					        <div class="flip-box-thumb">
-						      	<img src="assets/images/home-1/service-icon1.png" alt="">
-						    </div>
-						    <div class="flip-box-content">
-						    	<h4>Currency Hedging</h4>
-						    	<p>Protect your business from currency fluctuations with sophisticated hedging strategies tailored to your needs.</p>
-							    <div class="flip-box-button">
-			                    	<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
-			                    </div>
-						    </div>
-					    </div>
-				    </div>
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<div class="flip-box-thumb">
+								<img src="assets/images/home-1/service-icon1.png" alt="">
+							</div>
+							<div class="flip-box-content">
+								<h4>Currency Hedging</h4>
+								<p>Protect your business from currency fluctuations with sophisticated hedging strategies tailored to your needs.</p>
+								<div class="flip-box-button">
+									<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="flip-box-back">
+							<div class="flip-box-thumb">
+								<img src="assets/images/home-1/service-icon1.png" alt="">
+							</div>
+							<div class="flip-box-content">
+								<h4>Currency Hedging</h4>
+								<p>Protect your business from currency fluctuations with sophisticated hedging strategies tailored to your needs.</p>
+								<div class="flip-box-button">
+									<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>			
 			<div class="col-lg-6 col-md-6 col-xl-4">
 				<div class="flip-box">
-				    <div class="flip-box-inner">
-					    <div class="flip-box-front">
-						    <div class="flip-box-thumb">
-						      	<img src="assets/images/home-1/service-icon2.png" alt="">
-						    </div>
-						    <div class="flip-box-content">
-						    	<h4>Market Analysis</h4>
-						    	<p>Access real-time market data, technical analysis, and expert insights to make informed trading decisions.</p>
-							    <div class="flip-box-button">
-			                    	<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
-			                    </div>
-						    </div>
-					    </div>
-					    <div class="flip-box-back">
-					        <div class="flip-box-thumb">
-						      	<img src="assets/images/home-1/service-icon2.png" alt="">
-						    </div>
-						    <div class="flip-box-content">
-						    	<h4>Market Analysis</h4>
-						    	<p>Access real-time market data, technical analysis, and expert insights to make informed trading decisions.</p>
-							    <div class="flip-box-button">
-			                    	<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
-			                    </div>
-						    </div>
-					    </div>
-				    </div>
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<div class="flip-box-thumb">
+								<img src="assets/images/home-1/service-icon2.png" alt="">
+							</div>
+							<div class="flip-box-content">
+								<h4>Market Analysis</h4>
+								<p>Access real-time market data, technical analysis, and expert insights to make informed trading decisions.</p>
+								<div class="flip-box-button">
+									<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="flip-box-back">
+							<div class="flip-box-thumb">
+								<img src="assets/images/home-1/service-icon2.png" alt="">
+							</div>
+							<div class="flip-box-content">
+								<h4>Market Analysis</h4>
+								<p>Access real-time market data, technical analysis, and expert insights to make informed trading decisions.</p>
+								<div class="flip-box-button">
+									<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>			
 			<div class="col-lg-6 col-md-6 col-xl-4">
 				<div class="flip-box">
-				    <div class="flip-box-inner">
-					    <div class="flip-box-front">
-						    <div class="flip-box-thumb">
-						      	<img src="assets/images/home-1/service-icon3.png" alt="">
-						    </div>
-						    <div class="flip-box-content">
-						    	<h4>Risk Assessment</h4>
-						    	<p>Comprehensive evaluation of your currency exposure and customized risk management solutions.</p>
-							    <div class="flip-box-button">
-			                    	<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
-			                    </div>
-						    </div>
-					    </div>
-					    <div class="flip-box-back">
-					        <div class="flip-box-thumb">
-						      	<img src="assets/images/home-1/service-icon3.png" alt="">
-						    </div>
-						    <div class="flip-box-content">
-						    	<h4>Risk Assessment</h4>
-						    	<p>Comprehensive evaluation of your currency exposure and customized risk management solutions.</p>
-							    <div class="flip-box-button">
-			                    	<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
-			                    </div>
-						    </div>
-					    </div>
-				    </div>
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<div class="flip-box-thumb">
+								<img src="assets/images/home-1/service-icon3.png" alt="">
+							</div>
+							<div class="flip-box-content">
+								<h4>Risk Assessment</h4>
+								<p>Comprehensive evaluation of your currency exposure and customized risk management solutions.</p>
+								<div class="flip-box-button">
+									<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="flip-box-back">
+							<div class="flip-box-thumb">
+								<img src="assets/images/home-1/service-icon3.png" alt="">
+							</div>
+							<div class="flip-box-content">
+								<h4>Risk Assessment</h4>
+								<p>Comprehensive evaluation of your currency exposure and customized risk management solutions.</p>
+								<div class="flip-box-button">
+									<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>			
 			<div class="col-lg-6 col-md-6 col-xl-4">
 				<div class="flip-box">
-				    <div class="flip-box-inner">
-					    <div class="flip-box-front">
-						    <div class="flip-box-thumb">
-						      	<img src="assets/images/home-1/service-icon4.png" alt="">
-						    </div>
-						    <div class="flip-box-content">
-						    	<h4>FX Trading</h4>
-						    	<p>Execute trades with confidence using our advanced trading platform and expert guidance.</p>
-							    <div class="flip-box-button">
-			                    	<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
-			                    </div>
-						    </div>
-					    </div>
-					    <div class="flip-box-back">
-					        <div class="flip-box-thumb">
-						      	<img src="assets/images/home-1/service-icon4.png" alt="">
-						    </div>
-						    <div class="flip-box-content">
-						    	<h4>FX Trading</h4>
-						    	<p>Execute trades with confidence using our advanced trading platform and expert guidance.</p>
-							    <div class="flip-box-button">
-			                    	<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
-			                    </div>
-						    </div>
-					    </div>
-				    </div>
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<div class="flip-box-thumb">
+								<img src="assets/images/home-1/service-icon4.png" alt="">
+							</div>
+							<div class="flip-box-content">
+								<h4>FX Trading</h4>
+								<p>Execute trades with confidence using our advanced trading platform and expert guidance.</p>
+								<div class="flip-box-button">
+									<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="flip-box-back">
+							<div class="flip-box-thumb">
+								<img src="assets/images/home-1/service-icon4.png" alt="">
+							</div>
+							<div class="flip-box-content">
+								<h4>FX Trading</h4>
+								<p>Execute trades with confidence using our advanced trading platform and expert guidance.</p>
+								<div class="flip-box-button">
+									<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>			
 			<div class="col-lg-6 col-md-6 col-xl-4">
 				<div class="flip-box">
-				    <div class="flip-box-inner">
-					    <div class="flip-box-front">
-						    <div class="flip-box-thumb">
-						      	<img src="assets/images/home-1/service-icon5.png" alt="">
-						    </div>
-						    <div class="flip-box-content">
-						    	<h4>Portfolio Management</h4>
-						    	<p>Professional management of your FX portfolio with strategic allocation and risk control.</p>
-							    <div class="flip-box-button">
-			                    	<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
-			                    </div>
-						    </div>
-					    </div>
-					    <div class="flip-box-back">
-					        <div class="flip-box-thumb">
-						      	<img src="assets/images/home-1/service-icon5.png" alt="">
-						    </div>
-						    <div class="flip-box-content">
-						    	<h4>Portfolio Management</h4>
-						    	<p>Professional management of your FX portfolio with strategic allocation and risk control.</p>
-							    <div class="flip-box-button">
-			                    	<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
-			                    </div>
-						    </div>
-					    </div>
-				    </div>
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<div class="flip-box-thumb">
+								<img src="assets/images/home-1/service-icon5.png" alt="">
+							</div>
+							<div class="flip-box-content">
+								<h4>Portfolio Management</h4>
+								<p>Professional management of your FX portfolio with strategic allocation and risk control.</p>
+								<div class="flip-box-button">
+									<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="flip-box-back">
+							<div class="flip-box-thumb">
+								<img src="assets/images/home-1/service-icon5.png" alt="">
+							</div>
+							<div class="flip-box-content">
+								<h4>Portfolio Management</h4>
+								<p>Professional management of your FX portfolio with strategic allocation and risk control.</p>
+								<div class="flip-box-button">
+									<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>			
 			<div class="col-lg-6 col-md-6 col-xl-4">
 				<div class="flip-box">
-				    <div class="flip-box-inner">
-					    <div class="flip-box-front">
-						    <div class="flip-box-thumb">
-						      	<img src="assets/images/home-1/service-icon6.png" alt="">
-						    </div>
-						    <div class="flip-box-content">
-						    	<h4>Consulting Services</h4>
-						    	<p>Expert guidance on currency risk management, market trends, and strategic planning.</p>
-							    <div class="flip-box-button">
-			                    	<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
-			                    </div>
-						    </div>
-					    </div>
-					    <div class="flip-box-back">
-					        <div class="flip-box-thumb">
-						      	<img src="assets/images/home-1/service-icon6.png" alt="">
-						    </div>
-						    <div class="flip-box-content">
-						    	<h4>Consulting Services</h4>
-						    	<p>Expert guidance on currency risk management, market trends, and strategic planning.</p>
-							    <div class="flip-box-button">
-			                    	<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
-			                    </div>
-						    </div>
-					    </div>
-				    </div>
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<div class="flip-box-thumb">
+								<img src="assets/images/home-1/service-icon6.png" alt="">
+							</div>
+							<div class="flip-box-content">
+								<h4>Consulting Services</h4>
+								<p>Expert guidance on currency risk management, market trends, and strategic planning.</p>
+								<div class="flip-box-button">
+									<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="flip-box-back">
+							<div class="flip-box-thumb">
+								<img src="assets/images/home-1/service-icon6.png" alt="">
+							</div>
+							<div class="flip-box-content">
+								<h4>Consulting Services</h4>
+								<p>Expert guidance on currency risk management, market trends, and strategic planning.</p>
+								<div class="flip-box-button">
+									<a href="service.html">Learn More<i class="fa-solid fa-angles-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -609,7 +620,7 @@
 				<div class="section-title center style-one">
 					<h4>Our AI-Powered Process</h4>
 					<h1>How Our <span>Smart System Works</span></h1>
-			    </div>
+				</div>
 			</div>
 		</div>
 		<div class="row">
@@ -725,41 +736,41 @@
 					<h4>Common Questions</h4>
 					<h1>Frequently Asked</h1>
 					<h1>Questions</h1>
-			    </div>
-			    <div class="faqs-container">
+				</div>
+				<div class="faqs-container">
 					<div class="faq-singular">
-					    <h2 class="faq-question"><img src="assets/images/home-1/question.png" alt="">#1 What is currency hedging?</h2>
-					    <div class="faq-answer">
-					      <div class="desc">
-                            Currency hedging is a strategy to protect your business from unfavorable exchange rate movements. We help you implement various hedging techniques, including forward contracts, options, and swaps, tailored to your specific needs and risk tolerance.
-					      </div>
-					    </div>
-				    </div>						
-				    <div class="faq-singular">
-					    <h2 class="faq-question"><img src="assets/images/home-1/question.png" alt="">#2 How do you assess currency risk?</h2>
-					    <div class="faq-answer">
-					      <div class="desc">
-                            Our risk assessment process includes analyzing your exposure to currency fluctuations, evaluating your business's international operations, and identifying potential impacts on your financial performance. We use advanced analytics and market data to provide a comprehensive risk profile.
-					      </div>
-					    </div>
-				    </div>					 
-				    <div class="faq-singular">
-					    <h2 class="faq-question"><img src="assets/images/home-1/question.png" alt="">#3 What markets do you cover?</h2>
-					    <div class="faq-answer">
-					      <div class="desc">
-                            We provide comprehensive coverage of major, emerging, and exotic currency pairs. Our platform offers real-time access to global FX markets, including spot, forward, and options markets, with expert analysis and execution services.
-					      </div>
-					    </div>
-				    </div>	
-				   <div class="faq-singular">
-					    <h2 class="faq-question"><img src="assets/images/home-1/question.png" alt="">#4 How do you ensure security?</h2>
-					    <div class="faq-answer">
-					      <div class="desc">
-                            We implement industry-leading security measures to protect your data and transactions. Our platform uses advanced encryption, secure authentication, and regular security audits to ensure the highest level of protection for your FX operations.
-					      </div>
-					    </div>
-				    </div>					
-                </div>
+						<h2 class="faq-question"><img src="assets/images/home-1/question.png" alt="">#1 What is currency hedging?</h2>
+						<div class="faq-answer">
+							<div class="desc">
+								Currency hedging is a strategy to protect your business from unfavorable exchange rate movements. We help you implement various hedging techniques, including forward contracts, options, and swaps, tailored to your specific needs and risk tolerance.
+							</div>
+						</div>
+					</div>						
+					<div class="faq-singular">
+						<h2 class="faq-question"><img src="assets/images/home-1/question.png" alt="">#2 How do you assess currency risk?</h2>
+						<div class="faq-answer">
+							<div class="desc">
+								Our risk assessment process includes analyzing your exposure to currency fluctuations, evaluating your business's international operations, and identifying potential impacts on your financial performance. We use advanced analytics and market data to provide a comprehensive risk profile.
+							</div>
+						</div>
+					</div>					 
+					<div class="faq-singular">
+						<h2 class="faq-question"><img src="assets/images/home-1/question.png" alt="">#3 What markets do you cover?</h2>
+						<div class="faq-answer">
+							<div class="desc">
+								We provide comprehensive coverage of major, emerging, and exotic currency pairs. Our platform offers real-time access to global FX markets, including spot, forward, and options markets, with expert analysis and execution services.
+							</div>
+						</div>
+					</div>	
+					<div class="faq-singular">
+						<h2 class="faq-question"><img src="assets/images/home-1/question.png" alt="">#4 How do you ensure security?</h2>
+						<div class="faq-answer">
+							<div class="desc">
+								We implement industry-leading security measures to protect your data and transactions. Our platform uses advanced encryption, secure authentication, and regular security audits to ensure the highest level of protection for your FX operations.
+							</div>
+						</div>
+					</div>					
+				</div>
 			</div>
 		</div>
 	</div>
@@ -776,11 +787,11 @@
 <div class="portfolio-area style-one">
 	<div class="container">
 		<div class="row">
-		    <div class="col-lg-12">
+			<div class="col-lg-12">
 				<div class="section-title left style-one">
 					<h4>Portfolio </h4>
 					<h1>Our Completed <span>Projects</span></h1>
-			    </div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -797,8 +808,8 @@
 								<a href="project.html"><i class="fa-solid fa-plus"></i></a>
 							</div>
 							<div class="portfolio-title">
-							   <a href="project-details.html">Digital Marketing Agency</a>
-							   <p>Marketing </p>
+								<a href="project-details.html">Digital Marketing Agency</a>
+								<p>Marketing </p>
 							</div>
 						</div>
 					</div>
@@ -813,8 +824,8 @@
 								<a href="project.html"><i class="fa-solid fa-plus"></i></a>
 							</div>
 							<div class="portfolio-title">
-							   <a href="project-details.html">Digital Marketing Agency</a>
-							   <p>Marketing </p>
+								<a href="project-details.html">Digital Marketing Agency</a>
+								<p>Marketing </p>
 							</div>
 						</div>
 					</div>
@@ -829,8 +840,8 @@
 								<a href="project.html"><i class="fa-solid fa-plus"></i></a>
 							</div>
 							<div class="portfolio-title">
-							   <a href="project-details.html">Digital Marketing Agency</a>
-							   <p>Marketing </p>
+								<a href="project-details.html">Digital Marketing Agency</a>
+								<p>Marketing </p>
 							</div>
 						</div>
 					</div>
@@ -845,8 +856,8 @@
 								<a href="project.html"><i class="fa-solid fa-plus"></i></a>
 							</div>
 							<div class="portfolio-title">
-							   <a href="project-details.html">Digital Marketing Agency</a>
-							   <p>Marketing </p>
+								<a href="project-details.html">Digital Marketing Agency</a>
+								<p>Marketing </p>
 							</div>
 						</div>
 					</div>
@@ -871,7 +882,7 @@
 				<div class="section-title center style-one">
 					<h4>Nuestro Equipo</h4>
 					<h1>Conoce a Nuestros <span>Expertos</span></h1>
-			    </div>
+				</div>
 			</div>
 		</div>
 		<div class="row">
@@ -882,8 +893,8 @@
 					</div>
 					<div class="team-content">
 						<div class="team-bio">
-						   <h4>Rodrigo Hernández</h4>
-						   <p>CMO</p>
+							<h4>Rodrigo Hernández</h4>
+							<p>CMO</p>
 						</div>
 						<div class="team-social-icon">
 							<ul>
@@ -900,8 +911,8 @@
 					</div>
 					<div class="team-content">
 						<div class="team-bio">
-						   <h4>Josue Tostado</h4>
-						   <p>CTO</p>
+							<h4>Josue Tostado</h4>
+							<p>CTO</p>
 						</div>
 						<div class="team-social-icon">
 							<ul>
@@ -919,8 +930,8 @@
 					</div>
 					<div class="team-content">
 						<div class="team-bio">
-						   <h4>Roberto Barberena</h4>
-						   <p>CFO</p>
+							<h4>Roberto Barberena</h4>
+							<p>CFO</p>
 						</div>
 						<div class="team-social-icon">
 							<ul>
@@ -937,8 +948,8 @@
 					</div>
 					<div class="team-content">
 						<div class="team-bio">
-						   <h4>Ezra Zamora</h4>
-						   <p>COS</p>
+							<h4>Ezra Zamora</h4>
+							<p>COS</p>
 						</div>
 						<div class="team-social-icon">
 							<ul>
@@ -965,21 +976,21 @@
 		<div class="row">
 			<div class="col-lg-12 text-center">
 				<div class="section-title center style-one">
-        			<h4>Testimonial</h4>
-        			<h1>Customer's Awesome Feedback</h1>
-        			<h1>About Our Services</h1>
-        		</div>
+					<h4>Testimonial</h4>
+					<h1>Customer's Awesome Feedback</h1>
+					<h1>About Our Services</h1>
+				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="testi-list-1 owl-carousel">
-			   <div class="col-lg-12 text-center">
+				<div class="col-lg-12 text-center">
 					<div class="single-testimonial-box">
 						<div class="testi-desc">
 							<p>Completely extend leveraged customer service rather than performance based imperatives.
-	                         magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches
-	                         technology. Enthusiastically e-enable global e-markets for cooperative e-business. 
-	                         Authoritatively deliver highly efficient expertise</p>
+								magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches
+								technology. Enthusiastically e-enable global e-markets for cooperative e-business. 
+								Authoritatively deliver highly efficient expertise</p>
 						</div>
 						<div class="testi-rating">
 							<ul>
@@ -995,14 +1006,14 @@
 							<p>UI Designer</p>
 						</div>
 					</div>
-			   </div>			   
-			   <div class="col-lg-12 text-center">
+				</div>			   
+				<div class="col-lg-12 text-center">
 					<div class="single-testimonial-box">
 						<div class="testi-desc">
 							<p>Completely extend leveraged customer service rather than performance based imperatives.
-	                         magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches
-	                         technology. Enthusiastically e-enable global e-markets for cooperative e-business. 
-	                         Authoritatively deliver highly efficient expertise</p>
+								magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches
+								technology. Enthusiastically e-enable global e-markets for cooperative e-business. 
+								Authoritatively deliver highly efficient expertise</p>
 						</div>
 						<div class="testi-rating">
 							<ul>
@@ -1018,14 +1029,14 @@
 							<p>UI Designer</p>
 						</div>
 					</div>
-			   </div>			   
-			   <div class="col-lg-12 text-center">
+				</div>			   
+				<div class="col-lg-12 text-center">
 					<div class="single-testimonial-box">
 						<div class="testi-desc">
 							<p>Completely extend leveraged customer service rather than performance based imperatives.
-	                         magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches
-	                         technology. Enthusiastically e-enable global e-markets for cooperative e-business. 
-	                         Authoritatively deliver highly efficient expertise</p>
+								magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches
+								technology. Enthusiastically e-enable global e-markets for cooperative e-business. 
+								Authoritatively deliver highly efficient expertise</p>
 						</div>
 						<div class="testi-rating">
 							<ul>
@@ -1041,14 +1052,14 @@
 							<p>UI Designer</p>
 						</div>
 					</div>
-			   </div>			   
-			   <div class="col-lg-12 text-center">
+				</div>			   
+				<div class="col-lg-12 text-center">
 					<div class="single-testimonial-box">
 						<div class="testi-desc">
 							<p>Completely extend leveraged customer service rather than performance based imperatives.
-	                         magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches
-	                         technology. Enthusiastically e-enable global e-markets for cooperative e-business. 
-	                         Authoritatively deliver highly efficient expertise</p>
+								magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches
+								technology. Enthusiastically e-enable global e-markets for cooperative e-business. 
+								Authoritatively deliver highly efficient expertise</p>
 						</div>
 						<div class="testi-rating">
 							<ul>
@@ -1064,7 +1075,7 @@
 							<p>UI Designer</p>
 						</div>
 					</div>
-			   </div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -1084,7 +1095,7 @@
 				<div class="section-title center style-one">
 					<h4>Our blog Update</h4>
 					<h1>Featured News And <span>Insights</span> </h1>
-			    </div>
+				</div>
 			</div>
 		</div>
 		<div class="row">
@@ -1174,8 +1185,8 @@
 					<p>FXperto is your trusted partner in currency risk management. We combine cutting-edge technology with expert insights to help businesses navigate the complex world of foreign exchange. Our platform delivers real-time data, strategic analysis, and personalized solutions to protect your bottom line.</p>
 				</div>
 				<div class="toptech-button inner-style">
-                    <a href="about-1.html">Learn More<i class="bi bi-arrow-right-short"></i></a>
-                </div>
+					<a href="about-1.html">Learn More<i class="bi bi-arrow-right-short"></i></a>
+				</div>
 			</div>
 			<div class="col-lg-2 col-md-6">
 				<div class="footer-widget-content">
@@ -1209,18 +1220,18 @@
 					</div>
 				</div>
 			</div>
-		    <div class="col-lg-3 col-md-6">
+			<div class="col-lg-3 col-md-6">
 				<div class="footer-widget-content">
 					<div class="footer-widget-title">
 						<h4>Newsletter</h4>
 					</div>
-                    <p class="f-desc-2">Stay updated with FX market insights</p>
-                    <form action="#">
-                    	<div class="footer-newslatter-box">
-                    		<input type="text" name="Email" placeholder="Enter Your E-Mail" required>
-                    		<button type="submit">Subscribe</button>
-                    	</div>
-                    </form>
+					<p class="f-desc-2">Stay updated with FX market insights</p>
+					<form action="#">
+						<div class="footer-newslatter-box">
+							<input type="text" name="Email" placeholder="Enter Your E-Mail" required>
+							<button type="submit">Subscribe</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -1274,10 +1285,10 @@
 <!-- Start Toptech Scroll Up-->
 <!--==================================================-->
 <div class="prgoress_indicator active-progress">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 212.78;"></path>
-        </svg>
- </div>
+	<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+		<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 212.78;"></path>
+	</svg>
+</div>
 <!--==================================================-->
 <!-- End Toptech Scroll Up-->
 <!--==================================================-->
