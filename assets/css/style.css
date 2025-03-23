@@ -1,4 +1,3 @@
-
 /*==============================================
 Template Name: Toptech - Toptech It Solutions HTML5 Template 
 Author:  https://themeforest.net/user/dreamit-solution
@@ -52,6 +51,7 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
 =========================================================---*/
 .header-area {
     margin-bottom: -106px;
+    background: rgba(11, 34, 57, 0.9);
 }
 
 .header-menu {
@@ -8784,4 +8784,14 @@ Awards One Css
 .loaded .loader {
     top: -100%;
     opacity: 0;
+}
+
+.header-logo img {
+    max-width: 140px;
+    height: auto;
+}
+
+.footer-logo img {
+    max-width: 140px;
+    height: auto;
 }
