@@ -45,13 +45,22 @@ function updateContent() {
         }
     });
     
-    // Update page title for specific pages
+    // Update page title based on current page
     const path = window.location.pathname;
     const filename = path.substring(path.lastIndexOf('/') + 1);
     
+    // Update document title based on the page
     if (filename === 'team.html') {
-        document.getElementById('page-title').innerText = i18next.t('team.title') + ' - FXperto';
-    } else if (filename === 'index.html' || filename === '') {
-        document.getElementById('page-title').innerText = 'FXperto - ' + i18next.t('team.subtitle');
+        document.title = i18next.t('siteTitle.team');
+    } else if (filename === 'index.html' || filename === '' || path.endsWith('/')) {
+        document.title = i18next.t('siteTitle.home');
+    } else if (filename === 'about-1.html') {
+        document.title = i18next.t('siteTitle.about');
+    } else if (filename === 'service.html') {
+        document.title = i18next.t('siteTitle.services');
+    } else if (filename === 'contact.html') {
+        document.title = i18next.t('siteTitle.contact');
+    } else {
+        document.title = i18next.t('siteTitle.default');
     }
 } 

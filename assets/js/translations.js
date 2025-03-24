@@ -1,9 +1,17 @@
 const translations = {
     en: {
         translation: {
+            "siteTitle": {
+                "home": "FXperto - Foreign Exchange Risk Management Platform",
+                "team": "Our Team - FXperto",
+                "about": "About Us - FXperto",
+                "services": "Our Solutions - FXperto",
+                "contact": "Contact Us - FXperto",
+                "default": "FXperto - Currency Risk Management Experts"
+            },
             "nav": {
                 "home": "Home",
-                "about": "About Us",
+                "about": "About",
                 "aboutFxperto": "About FXperto",
                 "mission": "Mission & Vision",
                 "team": "Our Team",
@@ -16,7 +24,8 @@ const translations = {
                 "faqs": "FAQs",
                 "successCases": "Success Cases",
                 "contact": "Contact",
-                "freeTrial": "Free Trial"
+                "freeTrial": "Free Trial",
+                "getStarted": "Get Started"
             },
             "team": {
                 "title": "Our Team",
@@ -71,7 +80,12 @@ const translations = {
                 "tagline2": "Master Your FX with Confidence",
                 "description": "Don't let currency volatility control your business. FXperto delivers real-time data, expert insights, and strategic solutions to optimize your currency exchange and protect your bottom line.",
                 "getStarted": "Get Started",
-                "ourSolutions": "Our Solutions"
+                "ourSolutions": "Our Solutions",
+                "heading1": "Navigate Currency Markets",
+                "heading2": "With Confidence",
+                "subheading": "FXperto delivers real-time data, expert insights, and strategic solutions to optimize your currency exchange and protect your bottom line.",
+                "learnMore": "Learn More",
+                "watchDemo": "Watch Demo"
             },
             "features": {
                 "feature1Title": "Real-Time Intelligence",
@@ -88,16 +102,15 @@ const translations = {
                 "whoWeAre": "Who We Are",
                 "title1": "Navigate Currency Volatility with",
                 "title2": "Confidence with",
+                "company": "FXperto",
                 "description": "FXperto is your trusted partner in currency risk management. We combine cutting-edge technology with expert insights to help businesses navigate the complex world of foreign exchange. Our platform delivers real-time data, strategic analysis, and personalized solutions to protect your bottom line and optimize your currency operations.",
-                "expertise": {
-                    "market": {
-                        "title": "Market Expertise",
-                        "desc": "Our team of FX experts brings decades of experience in currency markets, helping you make informed decisions with confidence."
-                    },
-                    "technology": {
-                        "title": "Advanced Technology",
-                        "desc": "Leverage our state-of-the-art platform for real-time market data, automated alerts, and intelligent currency management tools."
-                    }
+                "expertiseTitles": {
+                    "market": "Market Expertise",
+                    "tech": "Advanced Technology"
+                },
+                "expertiseDesc": {
+                    "market": "Our team of FX experts brings decades of experience in currency markets, helping you make informed decisions with confidence.",
+                    "tech": "Leverage our state-of-the-art platform for real-time market data, automated alerts, and intelligent currency management tools."
                 },
                 "learnMore": "Learn More",
                 "expert": {
@@ -106,14 +119,55 @@ const translations = {
                 }
             },
             "services": {
-                "title": "Our Solutions",
-                "subtitle1": "Comprehensive FX &",
-                "subtitle2": "Risk Management Solutions"
+                "subheading": "Our Solutions",
+                "heading": "Comprehensive FX & Risk Management Solutions",
+                "description": "We offer a range of tailored services to manage your currency exposure and protect your business from market volatility.",
+                "service1": {
+                    "name": "Currency Hedging",
+                    "description": "Protect your business from currency fluctuations with sophisticated hedging strategies tailored to your needs."
+                },
+                "service2": {
+                    "name": "Market Analysis",
+                    "description": "Access real-time market data, technical analysis, and expert insights to make informed trading decisions."
+                },
+                "service3": {
+                    "name": "Risk Assessment",
+                    "description": "Comprehensive evaluation of your currency exposure and customized risk management solutions."
+                },
+                "learnMore": "Learn More"
+            },
+            "process": {
+                "heading": "Our AI-Powered Process",
+                "subheading": "How Our Smart System Works",
+                "step1": {
+                    "title": "Data Collection",
+                    "description": "Our system gathers real-time market data and currency information from multiple global sources."
+                },
+                "step2": {
+                    "title": "Risk Analysis",
+                    "description": "Advanced AI algorithms assess your exposure and identify potential currency risks."
+                },
+                "step3": {
+                    "title": "Strategy Development",
+                    "description": "Custom hedging strategies are created based on your business needs and risk profile."
+                },
+                "step4": {
+                    "title": "Ongoing Monitoring",
+                    "description": "Continuous tracking of market movements and strategy performance with automated alerts."
+                }
             }
         }
     },
     es: {
         translation: {
+            "siteTitle": {
+                "home": "FXperto - Plataforma de Gestión de Riesgo Cambiario",
+                "team": "Nuestro Equipo - FXperto",
+                "about": "Nosotros - FXperto",
+                "services": "Nuestras Soluciones - FXperto",
+                "contact": "Contáctanos - FXperto",
+                "default": "FXperto - Expertos en Gestión de Riesgo Cambiario"
+            },
             "nav": {
                 "home": "Inicio",
                 "about": "Nosotros",
@@ -129,7 +183,8 @@ const translations = {
                 "faqs": "FAQs",
                 "successCases": "Casos de Éxito",
                 "contact": "Contacto",
-                "freeTrial": "Prueba Gratuita"
+                "freeTrial": "Prueba Gratuita",
+                "getStarted": "Comenzar"
             },
             "team": {
                 "title": "Nuestro Equipo",
@@ -184,7 +239,12 @@ const translations = {
                 "tagline2": "Domina tu FX con confianza",
                 "description": "No dejes que la volatilidad de las divisas controle tu negocio. FXperto ofrece datos en tiempo real, asesoría experta y soluciones estratégicas para optimizar tus operaciones cambiarias y proteger tus resultados.",
                 "getStarted": "Comenzar",
-                "ourSolutions": "Nuestras Soluciones"
+                "ourSolutions": "Nuestras Soluciones",
+                "heading1": "Navega los Mercados Cambiarios",
+                "heading2": "Con Confianza",
+                "subheading": "FXperto ofrece datos en tiempo real, asesoría experta y soluciones estratégicas para optimizar tus operaciones cambiarias y proteger tus resultados.",
+                "learnMore": "Conocer Más",
+                "watchDemo": "Ver Demo"
             },
             "features": {
                 "feature1Title": "Inteligencia en Tiempo Real",
@@ -201,16 +261,15 @@ const translations = {
                 "whoWeAre": "Quiénes Somos",
                 "title1": "Navega la volatilidad de divisas con",
                 "title2": "Confianza con",
+                "company": "FXperto",
                 "description": "FXperto es tu socio confiable en la gestión de riesgo cambiario. Combinamos tecnología de vanguardia con asesoría experta para ayudar a las empresas a navegar por el complejo mundo de las divisas. Nuestra plataforma ofrece datos en tiempo real, análisis estratégico y soluciones personalizadas para proteger tus resultados y optimizar tus operaciones en divisas.",
-                "expertise": {
-                    "market": {
-                        "title": "Experiencia en Mercados",
-                        "desc": "Nuestro equipo de expertos en FX aporta décadas de experiencia en mercados de divisas, ayudándote a tomar decisiones informadas con confianza."
-                    },
-                    "technology": {
-                        "title": "Tecnología Avanzada",
-                        "desc": "Aprovecha nuestra plataforma de vanguardia para obtener datos de mercado en tiempo real, alertas automatizadas y herramientas inteligentes de gestión de divisas."
-                    }
+                "expertiseTitles": {
+                    "market": "Experiencia en Mercados",
+                    "tech": "Tecnología Avanzada"
+                },
+                "expertiseDesc": {
+                    "market": "Nuestro equipo de expertos en FX aporta décadas de experiencia en mercados de divisas, ayudándote a tomar decisiones informadas con confianza.",
+                    "tech": "Aprovecha nuestra plataforma de vanguardia para obtener datos de mercado en tiempo real, alertas automatizadas y herramientas inteligentes de gestión de divisas."
                 },
                 "learnMore": "Conocer Más",
                 "expert": {
@@ -219,9 +278,42 @@ const translations = {
                 }
             },
             "services": {
-                "title": "Nuestras Soluciones",
-                "subtitle1": "FX Integral y",
-                "subtitle2": "Soluciones de Gestión de Riesgo"
+                "subheading": "Nuestras Soluciones",
+                "heading": "Soluciones Integrales de FX y Gestión de Riesgo",
+                "description": "Ofrecemos una gama de servicios personalizados para gestionar tu exposición a divisas y proteger tu negocio de la volatilidad del mercado.",
+                "service1": {
+                    "name": "Cobertura Cambiaria",
+                    "description": "Protege tu negocio de las fluctuaciones de divisas con estrategias sofisticadas de cobertura adaptadas a tus necesidades."
+                },
+                "service2": {
+                    "name": "Análisis de Mercado",
+                    "description": "Accede a datos de mercado en tiempo real, análisis técnico y perspectivas de expertos para tomar decisiones informadas."
+                },
+                "service3": {
+                    "name": "Evaluación de Riesgos",
+                    "description": "Evaluación integral de tu exposición cambiaria y soluciones personalizadas de gestión de riesgos."
+                },
+                "learnMore": "Saber Más"
+            },
+            "process": {
+                "heading": "Nuestro Proceso Impulsado por IA",
+                "subheading": "Cómo Funciona Nuestro Sistema Inteligente",
+                "step1": {
+                    "title": "Recopilación de Datos",
+                    "description": "Nuestro sistema recopila datos de mercado en tiempo real e información de divisas de múltiples fuentes globales."
+                },
+                "step2": {
+                    "title": "Análisis de Riesgo",
+                    "description": "Algoritmos avanzados de IA evalúan tu exposición e identifican riesgos potenciales de divisas."
+                },
+                "step3": {
+                    "title": "Desarrollo de Estrategia",
+                    "description": "Se crean estrategias de cobertura personalizadas basadas en las necesidades de tu negocio y perfil de riesgo."
+                },
+                "step4": {
+                    "title": "Monitoreo Continuo",
+                    "description": "Seguimiento continuo de los movimientos del mercado y rendimiento de la estrategia con alertas automatizadas."
+                }
             }
         }
     }
