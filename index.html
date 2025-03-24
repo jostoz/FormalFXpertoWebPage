@@ -35,8 +35,14 @@
 	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all">
 	<!-- Coustom Animation CSS -->
 	<link rel="stylesheet" href="assets/css/coustom-animation.css" type="text/css" media="all">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="assets/css/custom.css" type="text/css" media="all">
 	<!-- modernizr js -->
 	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+	<!-- Language switcher scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.6.10/i18next.min.js"></script>
+	<script src="assets/js/translations.js"></script>
+	<script src="assets/js/language-switcher.js"></script>
 </head>
 
 <body>
@@ -62,43 +68,40 @@
 			<div class="col-lg-9">
 				<div class="header-menu">
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li class="menu-item-has-children"><a href="#">About<i class="fas fa-chevron-down"></i></a>
+						<li><a href="index.html" data-i18n="nav.home"></a></li>
+						<li class="menu-item-has-children">
+                            <a href="#" data-i18n="nav.about"></a>
                            <ul class="sub-menu">
-                           	   <li><a href="about-1.html">About Us</a></li>
-                           	   <li><a href="about-2.html">Our Mission</a></li>
+                           	   <li><a href="about-1.html" data-i18n="nav.aboutFxperto"></a></li>
+                           	   <li><a href="mission.html" data-i18n="nav.mission"></a></li>
+                            <li><a href="team.html" data-i18n="nav.team"></a></li>
                            </ul>
 						</li>
-						<li class="menu-item-has-children"><a href="#">Services<i class="fas fa-chevron-down"></i></a>
+						<li class="menu-item-has-children"><a href="#" data-i18n="nav.services"></a>
                            <ul class="sub-menu">
-                           	   <li><a href="service.html">FX Solutions</a></li>
-                           	   <li><a href="service-details.html">Risk Management</a></li>
+                           	   <li><a href="service.html" data-i18n="nav.solutions"></a></li>
+                           	   <li><a href="pricing.html" data-i18n="nav.plans"></a></li>
+                            <li><a href="service-details.html" data-i18n="nav.enterprise"></a></li>
                            </ul>
 						</li>
-						<li class="menu-item-has-children"><a href="#">Resources<i class="fas fa-chevron-down"></i></a>
+						<li class="menu-item-has-children"><a href="#" data-i18n="nav.resources"></a>
                            <ul class="sub-menu">
-                           	   <li><a href="choose-us.html">Why Choose Us</a></li>
-                           	   <li><a href="mission.html">Our Approach</a></li>
-                           	   <li><a href="team.html">Expert Team</a></li>
-                           	   <li><a href="project.html">Case Studies</a></li>
-                           	   <li><a href="location.html">Global Presence</a></li>
-                           	   <li><a href="pricing.html">Pricing</a></li>
-                           	   <li><a href="faqs.html">FAQs</a></li>
+                           	   <li><a href="blog-grid.html" data-i18n="nav.blog"></a></li>
+                           	   <li><a href="faqs.html" data-i18n="nav.faqs"></a></li>
+                           	   <li><a href="project.html" data-i18n="nav.successCases"></a></li>
                            </ul>
 						</li>
-					    <li class="menu-item-has-children"><a href="#">Insights<i class="fas fa-chevron-down"></i></a>
-                           <ul class="sub-menu">
-                           	   <li><a href="blog-grid.html">Market Analysis</a></li>
-                           	   <li><a href="blog-list.html">FX News</a></li>
-                           	   <li><a href="blog-2column.html">Research</a></li>
-                           	   <li><a href="blog-details.html">Expert Views</a></li>
-                           </ul>
-						</li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="contact.html" data-i18n="nav.contact"></a></li>
 					</ul>
 					<div class="header-search-icon search-box-outer">
 						<a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
 					</div>
+                    <div class="language-selector">
+                        <select class="lang-select" onchange="changeLanguage(this.value)">
+                            <option value="en">EN</option>
+                            <option value="es">ES</option>
+                        </select>
+                    </div>
 					<div class="header-button">
 						<a href="contact.html">Get Started</a>
 					</div>

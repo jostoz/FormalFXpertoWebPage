@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Nuestro Equipo - FXperto</title>
+	<title id="page-title">FXperto - Expertos en Gestión de Riesgo Cambiario</title>
 	<meta name="description" content="Conoce al equipo de expertos de FXperto. Profesionales con amplia experiencia en gestión de riesgo cambiario y tecnología financiera.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon -->
@@ -35,8 +35,14 @@
 	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all">
 	<!-- Coustom Animation CSS -->
 	<link rel="stylesheet" href="assets/css/coustom-animation.css" type="text/css" media="all">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="assets/css/custom.css" type="text/css" media="all">
 	<!-- modernizr js -->
 	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+	<!-- Language switcher scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.6.10/i18next.min.js"></script>
+	<script src="assets/js/translations.js"></script>
+	<script src="assets/js/language-switcher.js"></script>
 </head>
 
 <body>
@@ -63,32 +69,41 @@
 			<div class="col-lg-9">
 				<div class="header-menu">
 					<ul>
-						<li><a href="index.html">Inicio</a></li>
-						<li class="menu-item-has-children"><a href="#">Nosotros<i class="fas fa-chevron-down"></i></a>
+						<li><a href="index.html" data-i18n="nav.home"></a></li>
+						<li class="menu-item-has-children"><a href="#" data-i18n="nav.about"></a>
                            <ul class="sub-menu">
-                           	   <li><a href="about-1.html">Sobre FXperto</a></li>
-                           	   <li><a href="mission.html">Misión y Visión</a></li>
-                               <li><a href="team.html">Nuestro Equipo</a></li>
+                           	   <li><a href="about-1.html" data-i18n="nav.aboutFxperto"></a></li>
+                           	   <li><a href="mission.html" data-i18n="nav.mission"></a></li>
+                               <li><a href="team.html" data-i18n="nav.team"></a></li>
                            </ul>
 						</li>
-						<li class="menu-item-has-children"><a href="#">Servicios<i class="fas fa-chevron-down"></i></a>
+						<li class="menu-item-has-children"><a href="#" data-i18n="nav.services"></a>
                            <ul class="sub-menu">
-                           	   <li><a href="service.html">Nuestras Soluciones</a></li>
-                           	   <li><a href="pricing.html">Planes</a></li>
-                               <li><a href="service-details.html">Servicios Enterprise</a></li>
+                           	   <li><a href="service.html" data-i18n="nav.solutions"></a></li>
+                           	   <li><a href="pricing.html" data-i18n="nav.plans"></a></li>
+                               <li><a href="service-details.html" data-i18n="nav.enterprise"></a></li>
                            </ul>
 						</li>
-						<li class="menu-item-has-children"><a href="#">Recursos<i class="fas fa-chevron-down"></i></a>
+						<li class="menu-item-has-children"><a href="#" data-i18n="nav.resources"></a>
                            <ul class="sub-menu">
-                           	   <li><a href="blog-grid.html">Blog</a></li>
-                           	   <li><a href="faqs.html">FAQs</a></li>
-                           	   <li><a href="project.html">Casos de Éxito</a></li>
+                           	   <li><a href="blog-grid.html" data-i18n="nav.blog"></a></li>
+                           	   <li><a href="faqs.html" data-i18n="nav.faqs"></a></li>
+                           	   <li><a href="project.html" data-i18n="nav.successCases"></a></li>
                            </ul>
 						</li>
-						<li><a href="contact.html">Contacto</a></li>
+						<li><a href="contact.html" data-i18n="nav.contact"></a></li>
 					</ul>
+					<div class="header-search-icon search-box-outer">
+						<a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+					</div>
+                    <div class="language-selector">
+                        <select class="lang-select" onchange="changeLanguage(this.value)">
+                            <option value="en">EN</option>
+                            <option value="es">ES</option>
+                        </select>
+                    </div>
 					<div class="header-button">
-						<a href="contact.html">Prueba Gratuita</a>
+						<a href="contact.html" data-i18n="nav.freeTrial"></a>
 					</div>
 				</div>
 			</div>
@@ -108,7 +123,7 @@
 	<div class="mobile-menu">
 		<nav class="header-menu">
 			<ul class="nav_scroll">
-				<li class="menu-item-has-children"><a href="#">Home</a>
+				<li class="menu-item-has-children"><a href="#" data-i18n="nav.home"></a>
                    <ul class="sub-menu">
                    	    <li><a href="index.html">Home 1</a></li>
                    	    <li><a href="index-2.html">Home 2</a></li>
@@ -116,42 +131,35 @@
 						  <li><a href="index-4.html">Home 4</a></li>
                    </ul>
 				</li>
-				<li class="menu-item-has-children"><a href="#">About</a>
+				<li class="menu-item-has-children"><a href="#" data-i18n="nav.about"></a>
                    <ul class="sub-menu">
-                   	   <li><a href="about-1.html">About Us 1</a></li>
-                   	   <li><a href="about-2.html">About Us 2</a></li>
+                        <li><a href="about-1.html" data-i18n="nav.aboutFxperto"></a></li>
+                        <li><a href="mission.html" data-i18n="nav.mission"></a></li>
+                        <li><a href="team.html" data-i18n="nav.team"></a></li>
                    </ul>
 				</li>
-				<li class="menu-item-has-children"><a href="#">Service</a>
+				<li class="menu-item-has-children"><a href="#" data-i18n="nav.services"></a>
                    <ul class="sub-menu">
-                   	   <li><a href="service.html">Service</a></li>
-                   	   <li><a href="service-details.html">Service Details</a></li>
+                        <li><a href="service.html" data-i18n="nav.solutions"></a></li>
+                        <li><a href="pricing.html" data-i18n="nav.plans"></a></li>
+                        <li><a href="service-details.html" data-i18n="nav.enterprise"></a></li>
                    </ul>
 				</li>
-				<li class="menu-item-has-children"><a href="#">Pages</a>
+				<li class="menu-item-has-children"><a href="#" data-i18n="nav.resources"></a>
                    <ul class="sub-menu">
-                   	   <li><a href="choose-us.html">Why Choose Us</a></li>
-                   	   <li><a href="mission.html">Mission Visson </a></li>
-                   	   <li><a href="team.html">Our Team</a></li>
-                   	   <li><a href="team-details.html">Team Details </a></li>
-                   	   <li><a href="project.html">Our Project</a></li>
-                   	   <li><a href="project-details.html">Project Details </a></li>
-                   	   <li><a href="location.html">Our Location </a></li>
-                   	   <li><a href="pricing.html">Our Pricing</a></li>
-                   	   <li><a href="careers.html">Careers </a></li>
-                   	   <li><a href="faqs.html">Faqs</a></li>
+                        <li><a href="blog-grid.html" data-i18n="nav.blog"></a></li>
+                        <li><a href="faqs.html" data-i18n="nav.faqs"></a></li>
+                        <li><a href="project.html" data-i18n="nav.successCases"></a></li>
                    </ul>
 				</li>
-			    <li class="menu-item-has-children"><a href="#">Blog</a>
-                   <ul class="sub-menu">
-                   	   <li><a href="blog-grid.html">Blog Grid</a></li>
-                   	   <li><a href="blog-list.html">Blog List</a></li>
-                   	   <li><a href="blog-2column.html">Blog 2column</a></li>
-                   	   <li><a href="blog-details.html">Blog Details </a></li>
-                   </ul>
-				</li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="contact.html" data-i18n="nav.contact"></a></li>
 			</ul>
+            <div class="language-selector">
+                <select class="lang-select" onchange="changeLanguage(this.value)">
+                    <option value="en">EN</option>
+                    <option value="es">ES</option>
+                </select>
+            </div>
 		</nav>
 	</div>
 </div>
@@ -169,11 +177,11 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="breadcumb-content">
-					<h4>Nuestro Equipo</h4>
+					<h4 data-i18n="team.title"></h4>
 					<ul>
-						<li><a href="index.html">Inicio</a></li>
+						<li><a href="index.html" data-i18n="nav.home"></a></li>
 						<li>></li>
-						<li>Nuestro Equipo</li>
+						<li data-i18n="team.title"></li>
 					</ul>
 				</div>
 			</div>
@@ -195,8 +203,8 @@
 		<div class="row">
 			<div class="col-lg-12 text-center">
 				<div class="section-title center inner-style">
-        			<h4>Nuestro Equipo</h4>
-        			<h1>Expertos en Gestión de Riesgo Cambiario</h1>
+        			<h4 data-i18n="team.title"></h4>
+        			<h1 data-i18n="team.subtitle"></h1>
             	</div>
 			</div>
 		</div>
@@ -209,7 +217,7 @@
 					<div class="team-content">
 						<div class="team-bio">
 						   <h4>Josue Tostado</h4>
-						   <p>Chief Technology Officer</p>
+						   <p data-i18n="team.roles.cto"></p>
 						</div>
 						<div class="team-social-icon">
 							<ul>
@@ -218,7 +226,7 @@
 						</div>
 					</div>
 					<div class="team-description">
-						<p>Experto en tecnología financiera y desarrollo de soluciones innovadoras. Lidera el desarrollo de nuestras plataformas tecnológicas.</p>
+						<p data-i18n="team.descriptions.josue"></p>
 					</div>
 				</div>
 			</div>
@@ -230,7 +238,7 @@
 					<div class="team-content">
 						<div class="team-bio">
 						   <h4>Roberto Barberena</h4>
-						   <p>Chief Financial Officer</p>
+						   <p data-i18n="team.roles.cfo"></p>
 						   <span class="team-designation">Especialista en Mercados FX y Derivados</span>
 						</div>
 						<div class="team-social-icon">
@@ -240,7 +248,7 @@
 						</div>
 					</div>
 					<div class="team-description">
-						<p>Más de 10 años de experiencia en mercados financieros. Creador del "Podcast: El Pulso de las Divisas". Certificado AMIB Figura 3.</p>
+						<p data-i18n="team.descriptions.roberto"></p>
 					</div>
 				</div>
 			</div>
@@ -252,7 +260,7 @@
 					<div class="team-content">
 						<div class="team-bio">
 						   <h4>Rodrigo Hernández</h4>
-						   <p>Chief Marketing Officer</p>
+						   <p data-i18n="team.roles.cmo"></p>
 						   <span class="team-designation">MBA IPADE Business School</span>
 						</div>
 						<div class="team-social-icon">
@@ -262,7 +270,7 @@
 						</div>
 					</div>
 					<div class="team-description">
-						<p>Experto en análisis de datos y estrategias de crecimiento. MBA por IPADE Business School con intercambio en NHH Noruega.</p>
+						<p data-i18n="team.descriptions.rodrigo"></p>
 					</div>
 				</div>
 			</div> 		
@@ -274,7 +282,7 @@
 					<div class="team-content">
 						<div class="team-bio">
 						   <h4>Ezra Zamora</h4>
-						   <p>Chief Operating Officer</p>
+						   <p data-i18n="team.roles.coo"></p>
 						   <span class="team-designation">MBA EGADE Business School</span>
 						</div>
 						<div class="team-social-icon">
@@ -284,7 +292,7 @@
 						</div>
 					</div>
 					<div class="team-description">
-						<p>Especialista en finanzas corporativas y gestión de riesgo. Certificado AMIB Figura 3 con amplia experiencia en mercados FX.</p>
+						<p data-i18n="team.descriptions.ezra"></p>
 					</div>
 				</div>
 			</div>  
@@ -303,15 +311,15 @@
 		<div class="row align-items-center">
 			<div class="col-lg-6">
 				<div class="call-action-content">
-					<h4>¿Listo para comenzar?</h4>
-					<h1>Agenda una Demo</h1>
-					<h1>Personalizada</h1>
-					<p>Nuestro equipo te mostrará cómo podemos ayudarte a optimizar tu gestión de riesgo cambiario.</p>
+					<h4 data-i18n="cta.ready"></h4>
+					<h1 data-i18n="cta.schedule"></h1>
+					<h1 data-i18n="cta.personalized"></h1>
+					<p data-i18n="cta.description"></p>
 				</div>
 			</div>
 			<div class="col-lg-6">
 				<div class="call-action-button">
-					<a href="contact.html">Solicitar Demo <i class="bi bi-arrow-right"></i></a>
+					<a href="contact.html"><span data-i18n="cta.requestDemo"></span> <i class="bi bi-arrow-right"></i></a>
 				</div>
 			</div>
 		</div>
@@ -332,7 +340,7 @@
 					<a href="index.html"><img src="assets/images/logo-2.png" alt="FXperto Logo"></a>
 				</div>
 				<div class="footer-widget-desc">
-					<p>FXperto es tu socio estratégico en la gestión de riesgo cambiario. Combinamos tecnología de vanguardia con experiencia financiera para proteger y optimizar tus operaciones en divisas.</p>
+					<p data-i18n="footer.description"></p>
 				</div>
 				<div class="footer-social">
 					<ul>
@@ -345,14 +353,14 @@
 			<div class="col-lg-2 col-md-6">
 				<div class="footer-widget-content">
 					<div class="footer-widget-title">
-						<h4>Enlaces Rápidos</h4>
+						<h4 data-i18n="footer.quickLinks"></h4>
 					</div>
 					<div class="footer-widget-menu">
 						<ul>
-							<li><a href="about-1.html"><i class="bi bi-arrow-right-circle"></i>Sobre Nosotros</a></li>
-							<li><a href="service.html"><i class="bi bi-arrow-right-circle"></i>Servicios</a></li>
-							<li><a href="pricing.html"><i class="bi bi-arrow-right-circle"></i>Planes</a></li>
-							<li><a href="contact.html"><i class="bi bi-arrow-right-circle"></i>Contacto</a></li>
+							<li><a href="about-1.html"><i class="bi bi-arrow-right-circle"></i><span data-i18n="footer.aboutUs"></span></a></li>
+							<li><a href="service.html"><i class="bi bi-arrow-right-circle"></i><span data-i18n="footer.services"></span></a></li>
+							<li><a href="pricing.html"><i class="bi bi-arrow-right-circle"></i><span data-i18n="footer.plans"></span></a></li>
+							<li><a href="contact.html"><i class="bi bi-arrow-right-circle"></i><span data-i18n="footer.contact"></span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -360,7 +368,7 @@
 			<div class="col-lg-3 col-md-6">
 				<div class="footer-widget-content">
 					<div class="footer-widget-title">
-						<h4>Oficinas</h4>
+						<h4 data-i18n="footer.offices"></h4>
 					</div>
 					<div class="footer-widget-menu">
 						<ul>
@@ -376,13 +384,13 @@
 		    <div class="col-lg-3 col-md-6">
 				<div class="footer-widget-content">
 					<div class="footer-widget-title">
-						<h4>Newsletter</h4>
+						<h4 data-i18n="footer.newsletter"></h4>
 					</div>
-                    <p class="f-desc-2">Suscríbete para recibir análisis de mercado y noticias relevantes</p>
+                    <p class="f-desc-2" data-i18n="footer.subscribe"></p>
                     <form action="#">
                     	<div class="footer-newslatter-box">
-                    		<input type="text" name="Email" placeholder="Tu correo electrónico" required>
-                    		<button type="submit">Suscribirse</button>
+                    		<input type="text" name="Email" data-i18n="footer.email" placeholder="Tu correo electrónico" required>
+                    		<button type="submit" data-i18n="footer.subscribeButton"></button>
                     	</div>
                     </form>
 				</div>
@@ -393,14 +401,14 @@
 				<div class="row">
 					<div class="col-lg-6 col-md-6">
 						<div class="footer-bottom-content">
-							<p>© 2024 FXperto. Todos los derechos reservados.</p>
+							<p data-i18n="footer.rights"></p>
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-6">
 						<div class="footer-bottom-menu">
 							<ul>
-								<li><a href="#">Términos y Condiciones</a></li>
-								<li><a href="#">Privacidad</a></li>
+								<li><a href="#" data-i18n="footer.terms"></a></li>
+								<li><a href="#" data-i18n="footer.privacy"></a></li>
 							</ul>
 						</div>
 					</div>
