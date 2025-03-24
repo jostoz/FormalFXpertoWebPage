@@ -235,7 +235,7 @@ const translations = {
             },
             "hero": {
                 "welcome": "Bienvenido a FXperto",
-                "tagline1": "Deja las conjeturas. Empieza a planificar.",
+                "tagline1": "Evita la especulación. Empieza a planificar.",
                 "tagline2": "Domina tu FX con confianza",
                 "description": "No dejes que la volatilidad de las divisas controle tu negocio. FXperto ofrece datos en tiempo real, asesoría experta y soluciones estratégicas para optimizar tus operaciones cambiarias y proteger tus resultados.",
                 "getStarted": "Comenzar",
