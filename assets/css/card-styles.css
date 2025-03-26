@@ -1,0 +1,426 @@
+/* Financial AI Cards Styles */
+.financial-ai-area {
+    padding: 80px 0;
+    background-color: #0B2239;
+    position: relative;
+    overflow: hidden;
+}
+
+.financial-card {
+    border-radius: 15px;
+    padding: 30px;
+    height: 100%;
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    will-change: transform, box-shadow;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.financial-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+.financial-card:hover::after {
+    opacity: 1;
+}
+
+.blue-card {
+    background: linear-gradient(135deg, #0c5adb 0%, #43baff 100%);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-size: 200% 200%;
+}
+
+.blue-card:hover {
+    background-position: right bottom;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.white-card {
+    background: #0B2239;
+    color: #e0e0e0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.white-card:hover {
+    border-color: rgba(30, 87, 153, 0.2);
+}
+
+.financial-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    transform: translateZ(20px);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.blue-card h3 {
+    color: white;
+}
+
+.white-card h3 {
+    color: #43baff;
+}
+
+.financial-card:hover h3 {
+    transform: translateZ(30px) translateY(-5px);
+}
+
+.financial-card p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    transform: translateZ(15px);
+    transition: transform 0.3s ease;
+}
+
+.financial-card:hover p {
+    transform: translateZ(25px);
+}
+
+.badge-tag {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background: #0c5adb;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    transform: translateZ(25px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+}
+
+.financial-card:hover .badge-tag {
+    transform: translateZ(40px) scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.highlight-text {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 15px 0;
+    transform: translateZ(20px);
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.blue-card .highlight-text {
+    color: #fff;
+}
+
+.white-card .highlight-text {
+    color: #43baff;
+}
+
+.financial-card:hover .highlight-text {
+    transform: translateZ(35px) scale(1.1);
+    text-shadow: 0 0 10px rgba(12, 90, 219, 0.5);
+}
+
+.subtext {
+    font-size: 16px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    transform: translateZ(15px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.financial-card:hover .subtext {
+    transform: translateZ(25px);
+    opacity: 1;
+}
+
+.portfolio-list {
+    margin: 20px 0;
+    transform: translateZ(15px);
+    transition: transform 0.3s ease;
+}
+
+.financial-card:hover .portfolio-list {
+    transform: translateZ(30px);
+}
+
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.portfolio-item:last-child {
+    border-bottom: none;
+}
+
+.financial-card:hover .portfolio-item {
+    border-color: rgba(30, 87, 153, 0.2);
+}
+
+.portfolio-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.financial-card:hover .portfolio-item img {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item span {
+    font-size: 16px;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item .percentage {
+    margin-left: auto;
+    color: #43baff;
+    font-weight: 600;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.financial-card:hover .portfolio-item .percentage {
+    color: #43baff;
+    transform: scale(1.1);
+}
+
+.chart-container {
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 20px 0;
+    overflow: hidden;
+    position: relative;
+    transform: translateZ(15px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blue-card .chart-container {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.financial-card:hover .chart-container {
+    transform: translateZ(30px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.animated-chart {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #0c5adb 0%, #43baff 50%, transparent 50%);
+    animation: chartAnimation 3s infinite;
+}
+
+.card-button {
+    margin-top: 25px;
+    transform: translateZ(20px);
+    transition: transform 0.3s ease;
+}
+
+.financial-card:hover .card-button {
+    transform: translateZ(35px);
+}
+
+.card-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-button a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.card-button a:hover::before {
+    left: 100%;
+}
+
+.blue-card .card-button a {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.blue-card .card-button a:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.white-card .card-button a {
+    background: rgba(12, 90, 219, 0.15);
+    color: #43baff;
+    border: 1px solid rgba(12, 90, 219, 0.3);
+}
+
+.white-card .card-button a:hover {
+    background: rgba(12, 90, 219, 0.25);
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Trophy animation styles */
+.trophy-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    transform: translateZ(30px);
+    transition: transform 0.3s ease;
+}
+
+.financial-card:hover .trophy-container {
+    transform: translateZ(50px) scale(1.1);
+}
+
+.trophy-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.financial-card:hover .trophy-img {
+    transform: rotate(5deg);
+    filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.3)) brightness(1.1);
+}
+
+/* Animation keyframes */
+@keyframes chartAnimation {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* AI Badge Styles */
+.ai-badge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(12, 90, 219, 0.15);
+    color: #43baff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.ai-badge i {
+    margin-right: 5px;
+}
+
+/* Stock Status Badge */
+.stock-status {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.3);
+    color: #43baff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Price Alert Box */
+.price-alert-box {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.price-alert-box .alert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.price-alert-box .alert-time {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.price-alert-box .alert-value {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #43baff;
+}
+
+.price-alert-box .alert-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.price-alert-box .alert-button {
+    font-size: 0.8rem;
+    color: #e0e0e0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.price-alert-box .alert-icon {
+    color: #ff4d4d;
+    font-size: 1.2rem;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 5px rgba(12, 90, 219, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(12, 90, 219, 0.8); }
+    100% { box-shadow: 0 0 5px rgba(12, 90, 219, 0.5); }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 991px) {
+    .financial-card {
+        margin-bottom: 30px;
+    }
+}

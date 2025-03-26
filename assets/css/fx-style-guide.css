@@ -1,0 +1,147 @@
+/**
+ * FXperto Style Guide
+ * This file serves as a reference for the brand's visual identity and styling guidelines.
+ */
+
+/**
+ * COLOR PALETTE
+ * 
+ * Primary Colors:
+ * - Primary Blue: #0c5adb - Used for buttons, links, and primary actions
+ * - Dark Blue: #0B2239 - Used for backgrounds, headers, and text
+ * - White: #fff - Used for text on dark backgrounds and card backgrounds
+ * 
+ * Secondary Colors:
+ * - Light Blue: #43baff - Used for highlights and secondary elements
+ * - Success Green: #28a745 - Used for positive indicators and success messages
+ * - Warning Yellow: #ffc107 - Used for warnings and attention indicators
+ * - Danger Red: #dc3545 - Used for errors and critical alerts
+ * - Gray: #686868 - Used for secondary text and disabled elements
+ */
+
+/**
+ * TYPOGRAPHY
+ * 
+ * Font Families:
+ * - Headings: "Rajdhani", sans-serif
+ * - Body Text: "Nunito", sans-serif
+ * 
+ * Font Sizes:
+ * - H1: 50px
+ * - H2: 35px
+ * - H3: 30px
+ * - H4: 24px
+ * - H5: 20px
+ * - H6: 18px
+ * - Body: 16px
+ * - Small: 14px
+ * 
+ * Font Weights:
+ * - Regular: 400
+ * - Medium: 500
+ * - Semi-Bold: 600
+ * - Bold: 700
+ */
+
+/**
+ * COMPONENTS
+ * 
+ * Cards:
+ * - Border Radius: 15px
+ * - Box Shadow: 0 5px 15px rgba(0, 0, 0, 0.1)
+ * - Padding: 30px
+ * - Margin Bottom: 30px
+ * 
+ * Buttons:
+ * - Border Radius: 4px (standard) or 30px (rounded)
+ * - Padding: 14px 34px (large), 10px 20px (medium), 6px 12px (small)
+ * - Font Weight: 600
+ * 
+ * Badges:
+ * - Border Radius: 20px
+ * - Padding: 5px 15px
+ * - Font Size: 0.9rem
+ * - Font Weight: 600
+ * 
+ * Icons:
+ * - Font Awesome 5 and Bootstrap Icons
+ * - Sizes: 16px (small), 24px (medium), 32px (large)
+ */
+
+/**
+ * ANIMATIONS
+ * 
+ * Transitions:
+ * - Default: all 0.3s ease
+ * - Hover Effects: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)
+ * 
+ * Hover Effects:
+ * - Cards: translateY(-10px) + increased shadow
+ * - Buttons: background color change + subtle scale
+ * - Links: color change + underline
+ * 
+ * Special Effects:
+ * - 3D Tilt: for cards and interactive elements
+ * - Glow: for highlighting important elements
+ * - Pulse: for notifications and alerts
+ */
+
+/**
+ * LAYOUT
+ * 
+ * Container:
+ * - Max Width: 1200px
+ * - Padding: 0 15px
+ * 
+ * Grid:
+ * - Bootstrap 4 grid system
+ * - Gutters: 30px
+ * 
+ * Spacing:
+ * - Section Padding: 80px 0
+ * - Element Margin: 30px (default)
+ */
+
+/**
+ * RESPONSIVE BREAKPOINTS
+ * 
+ * - Extra Small: < 576px
+ * - Small: >= 576px
+ * - Medium: >= 768px
+ * - Large: >= 992px
+ * - Extra Large: >= 1200px
+ */
+
+/**
+ * USAGE EXAMPLES
+ * 
+ * Primary Button:
+ * .btn-primary {
+ *     background: #0c5adb;
+ *     color: #fff;
+ *     border: 1px solid #0c5adb;
+ *     border-radius: 4px;
+ *     padding: 14px 34px;
+ *     font-weight: 600;
+ *     transition: all 0.3s ease;
+ * }
+ * 
+ * Card:
+ * .card {
+ *     background: #fff;
+ *     border-radius: 15px;
+ *     padding: 30px;
+ *     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+ *     transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+ * }
+ * 
+ * Badge:
+ * .badge {
+ *     background: #0c5adb;
+ *     color: #fff;
+ *     border-radius: 20px;
+ *     padding: 5px 15px;
+ *     font-size: 0.9rem;
+ *     font-weight: 600;
+ * }
+ */
